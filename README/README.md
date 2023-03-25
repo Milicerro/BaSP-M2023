@@ -7,7 +7,7 @@ To achieve this, we worked in subgroups of 2/3 people. Although, always communic
 
 ## Week 02
 In this second week, we have to do the HTML code of the landing page, wich is the main of all.
-To achive this, we have to only use HTML, this is basic structure and the basic tags.
+To achieve this, we have to only use HTML, this is basic structure and the basic tags.
 
 ## Authors
 - Milagros Cerro

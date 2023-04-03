@@ -8,8 +8,14 @@ The screenflow was based on a gym website.
 To achieve this, we worked in subgroups of 2/3 people. Although, always communicating and coordinating with the whole team.
 
 ## Week 02
-In this second week, we have to do the HTML code of the landing page, wich is the main of all.
+In the second week, we have to do the HTML code of the landing page, wich is the main of all.
 To achieve this, we have to only use HTML, this is basic structure and the basic tags.
+
+## Week 06
+In this third week, we take the html code and add styles with css, always trying to achieve the landing page of the app.
+This project was individual, but I still received help from my teammates.
+
+![Landing page]("/Assets/Images/landin-page.png")
 
 ## Created by
 - Milagros Cerro

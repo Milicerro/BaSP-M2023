@@ -26,7 +26,7 @@
             </nav>
         </header>
         <aside class="main-aside">
-            <nav>
+            <div>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
@@ -34,12 +34,16 @@
                     <li><a href="#activities">Activities</a></li>
                     <li><a href="#memberships">Memberships</a></li>
                     <li><a href="#our story">Our Story</a></li>
-                    <div class="img-aside">
-                        <li><img src="../Assets/Images/logo-maps.png" alt="Logo Maps">Av. Pellegrini 3535</li>
-                        <li><img src="../Assets/Images/logo-tel.png" alt="Logo Tel">+464 206 96</li>
-                    </div>
                 </ul>
-            </nav>
+                    <div class="img-aside">
+                        <img src="../Assets/Images/logo-maps.png" alt="Logo Maps">
+                        <p>Av. Pellegrini 3535</p>
+                    </div>  
+                    <div class="tel">
+                        <img src="../Assets/Images/logo-tel.png" alt="Logo Tel">
+                        <p>+464 206 96</p>
+                    </div>
+            </div>
         </aside>
         <main class="conteiner-main">
             <section id="home">
@@ -49,32 +53,38 @@
                 <p>In this app you can choose our best personal trainers and the best classes</p>
                 <p>have a bunch of privileges with our differents memberships</p>
             </section>
-            <div>
-                <section id="features">
-                    <div class="secondary-title">
-                        <h3>FEATU</h3>
-                        <h4>RES</h4>
-                    </div>
-                    <ul class="conteiner-features">
-                        <div class="features-cards-reservation">
-                             <li>RESERVATION</li>
-                                <p> Choose your favorite class and ensure your place</p>
+            <section id="features">
+                <div class="secondary-title">
+                    <h2>FEATU</h2>
+                    <h3>RES</h3>
+                </div>
+                <ul class="conteiner-features">
+                    <li class="features-cards-reservation">
+                        <div>
+                            <h4>RESERVATION</h4>
+                            <p>Choose your favorite class and ensure your place</p>
                         </div>
-                        <div class="features-cards-schedule">
-                            <li>SCHEDULE</li>
-                                <p>Monday to saturday 08 am till 08 pm</p>
+                    </li>
+                    <li class="features-cards-schedule">
+                        <div>    
+                            <h4>SCHEDULE</h4>
+                            <p>Monday to saturday 08 am till 08 pm</p>
                         </div>
-                        <div class="features-cards-memberships">
-                            <li>MEMBERSHIPS</li>
-                                <p>Pick which one is best for you</p>
+                    </li>
+                    <li class="features-cards-memberships">
+                        <div>
+                            <h4>MEMBERSHIPS</h4>
+                            <p>Pick which one is best for you</p>
                         </div>
-                        <div class="features-cards-contact">
-                            <li>CONTACT AND SUGGESTIONS</li>
-                                <p>Your opinion is important to us, it helps us improve</p>
+                    </li>
+                    <li class="features-cards-contact">
+                        <div>
+                            <h4>CONTACT AND SUGGESTIONS</h4>
+                            <p>Your opinion is important to us, it helps us improve</p>
                         </div>
-                    </ul>
-                </section>
-            </div>
+                    </li>
+                </ul>
+            </section>
             <section id="contact-us">
                 <div class="secondary-title">
                     <h3>CONTACT</h3>
@@ -82,33 +92,33 @@
                 </div>
                 <div class="form-contact-us">
                     <form action="#">
-                            <div class="contact-us-divs">
-                                <label>Name</label>
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="contact-us-divs">
-                                <label>Surname</label>
-                                <input type="text" placeholder="Surname">
-                            </div>
-                            <div class="contact-us-divs">
-                                <label>Email</label>
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div class="contact-us-divs">
-                                <label>Contact Reason</label>
-                                    <select>
-                                        <option value="choose one">Choose one</option>
-                                        <option value="i want to know the memberships and costs">I want to know the memberships and costs</option>
-                                        <option value="i want to make a query or suggestion">I want to make a query or suggestion</option>
-                                        <option value="i want to make a claim">I want to make a claim</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                            </div>
-                            <div class="contact-us-divs textarea">
-                                <label>Message</label>
-                                <textarea name="message">Write here...</textarea>
-                                <button type="submit">Submit</button>
-                            </div>
+                        <div class="contact-us-divs">
+                            <label>Name</label>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="contact-us-divs">
+                            <label>Surname</label>
+                            <input type="text" placeholder="Surname">
+                        </div>
+                        <div class="contact-us-divs">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="contact-us-divs">
+                            <label>Contact Reason</label>
+                                <select>
+                                    <option value="choose one">Choose one</option>
+                                    <option value="i want to know the memberships and costs">I want to know the memberships and costs</option>
+                                    <option value="i want to make a query or suggestion">I want to make a query or suggestion</option>
+                                    <option value="i want to make a claim">I want to make a claim</option>
+                                    <option value="other">Other</option>
+                                </select>
+                        </div>
+                        <div class="contact-us-divs textarea">
+                            <label>Message</label>
+                            <textarea name="message">Write here...</textarea>
+                            <button type="submit">Submit</button>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -175,24 +185,24 @@
             </section>
         </main>
         <footer id="footer">
-                <div class="conteiner-social">
-                    <a href="#">
-                        <img src="../Assets/Images/instagram-logo.png" alt="Log In">
-                        @rocketgym
-                    </a>
-                    <a href="#">
-                        <img src="../Assets/Images/whatsapp-logo.png" alt="whatsapp logo">
-                        +1 408 741 2369
-                    </a>
-                    <a href="#">
-                        <img src="../Assets/Images/facebook-logo.png" alt="fb logo">
-                        MegaRocket GYM
-                    </a>
-                </div>
-                <div class="copy">
-                    <p>MEGA ROCKET SA.</p>
-                    <p>All rights reserved.2023 &copy;</p>
-                </div>
+            <div class="conteiner-social">
+                <a href="#">
+                    <img src="../Assets/Images/instagram-logo.png" alt="Log In">
+                    @rocketgym
+                </a>
+                <a href="#">
+                    <img src="../Assets/Images/whatsapp-logo.png" alt="whatsapp logo">
+                    +1 408 741 2369
+                </a>
+                <a href="#">
+                    <img src="../Assets/Images/facebook-logo.png" alt="fb logo">
+                    MegaRocket GYM
+                </a>
+            </div>
+            <div class="copy">
+                <span>MEGA ROCKET SA.</span>
+                <span>All rights reserved.2023 &copy;</span>
+            </div>
         </footer>
     </body>
 </html>

@@ -15,8 +15,25 @@ To achieve this, we have to only use HTML, this is basic structure and the basic
 In this third week, we take the html code and add styles with css, always trying to achieve the landing page of the app.
 This project was individual, but I still received help from my teammates.
 
-##This is the Landing page;
+## This is the Landing page;
 ![Landing page](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/landin-page.png)
+
+## This project is for:
+![Logo](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/radiumrocket.png)
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Example Color | ![#57524f](https://via.placeholder.com/10/57524f?text=+) #57524f |
+| Example Color | ![#0f0d0b](https://via.placeholder.com/10/0f0d0b?text=+) #0f0d0b |
+| Example Color | ![#d5dd3b](https://via.placeholder.com/10/d5dd3b?text=+) #d5dd3b |
+| Example Color | ![#cacacb](https://via.placeholder.com/10/cacacb?text=+) #cacacb |
+| Example Color | ![#787c29](https://via.placeholder.com/10/787c29?text=+) #787c29 |
 
 ## Created by
 - Milagros Cerro
+
+
+## 🛠 Skills
+HTML, CSS...

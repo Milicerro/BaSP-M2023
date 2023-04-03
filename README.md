@@ -15,7 +15,8 @@ To achieve this, we have to only use HTML, this is basic structure and the basic
 In this third week, we take the html code and add styles with css, always trying to achieve the landing page of the app.
 This project was individual, but I still received help from my teammates.
 
-![Landing page]("/Assets/Images/landin-page.png")
+##This is the Landing page;
+![Landing page](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/landin-page.png)
 
 ## Created by
 - Milagros Cerro

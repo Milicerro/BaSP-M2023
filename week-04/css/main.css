@@ -1,0 +1,582 @@
+
+.main-aside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+  
+.main-aside li {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color: #000;
+    padding: 8px 16px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+  
+.img-aside {
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    top: 6776px;
+}
+  
+.img-aside img {
+    height: 20px;
+    width: 20px;
+    padding: 0px 290px 22px 43px;
+}
+
+.logo-tel img {
+    height: 20px;
+    width: 20px;
+    padding: 6267px 0px 23px 45px;
+}
+  
+.main-aside p {
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    top: -57px;
+    left: -6px;
+    overflow: auto;
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+  
+.conteiner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+
+/* .container-first-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+} */
+  
+#home {
+    background-image: url("../../Assets/Images/inicio-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+    width: auto;
+}
+  
+#home h2 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 3px #000;
+    padding-top: 70px;
+    padding-right: 75px;
+}
+  
+#home h3 {
+    color: #E3EC39;
+    text-shadow: 2px 3px #000;
+    font-size: 50px;
+    padding-right: 20px;
+}
+  
+#home p {
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 1px 2px #000;
+    padding-top: 80px;
+}
+
+#features .conteiner-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#features h2 {
+    display: flex;
+    color: #fff;
+    padding-top: 90px;
+    padding-right: 83px;
+}
+  
+#features h3 {
+    display: flex;
+    color: #D5DD3C;
+    padding-left: 190px
+}
+  
+.secondary-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 55px;
+    line-height: 60px;
+    text-shadow: 2px 3px#000;
+}
+  
+#features li {
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+#features h4 {
+    font-size: 20px;
+    color: #E3EC39;
+    text-shadow: 1px 5px 10px #000;
+}
+  
+#features p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    line-height: 35px;
+    text-shadow: 3px 5px 8px #000;
+}
+  
+.features-cards-reservation {
+    background-image: url("../../Assets/Images/reservation.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(1px 2px 5px #000);
+    height: 179px;
+    width: 330px;
+    padding-top: 90px;
+    border-radius: 30px;
+    margin: 50px -8px;
+}
+  
+.features-cards-schedule {
+    background-image: url("../../Assets/Images/schuedel.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(1px 2px 5px #000);
+    height: 179px;
+    width: 330px;
+    padding-top: 90px;
+    border-radius: 30px;
+    margin: 50px -8px;
+}
+  
+.features-cards-memberships {
+    background-image: url("../../Assets/Images/membership.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(1px 2px 5px #000);
+    height: 179px;
+    width: 330px;
+    padding-top: 90px;
+    border-radius: 30px;
+    margin: 50px -8px;
+}
+  
+.features-cards-contact {
+    background-image: url("../../Assets/Images/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(1px 2px 5px #000);
+    height: 179px;
+    width: 330px;
+    padding-top: 90px;
+    border-radius: 30px;
+    margin: 50px -8px;
+}
+  
+#contact-us h3 {
+    padding-right: 45px;
+    color: #fff;
+}
+  
+#contact-us h4 {
+    color: #D5DD3C;
+    padding-left: 247px;
+}
+  
+#contact-us .secondary-title {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+  
+.form-contact-us {
+    border-radius: 30px;
+    background-color: #fff;
+    background-position: center;
+    margin: 43px 25px 1px 25px;
+    padding: 18px 5px 15px 5px;
+    height: 680px;
+    Width: auto;
+}
+  
+.form-contact-us input, select {
+    width: 286px;
+    height: 39px;
+    padding: 1px 6px;
+    border: 1.5px solid #373867;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d4cdcd;
+    color: #323232;
+}
+  
+.form-contact-us button {
+    background-color: #E3EC39;
+    border: none;
+    border-radius: 7px;
+    Width: 80px;
+    height: 42px;
+    position: relative;
+    top: 125px;;
+}
+  
+.form-contact-us label {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 10px;
+}
+  
+.form-contact-us textarea {
+    width: 293px;
+    height: 134px;
+    padding: 15px 0px;
+    margin: -38px 0px;
+    border-radius: 10px;
+    border: solid #00000000;
+    background-color: #d4cdcd;
+    color: #323232;
+    position: relative;
+    top: 60px;
+ }
+  
+.contact-us-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+  
+#activities .secondary-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#activities ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+#activities li {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 5px 5px #000;
+    background-color: hsla(0, 0%, 7%, 0.568);
+    border-radius: 102px;
+}
+  
+#activities h3 {
+    display: flex;
+    padding-right: 60px;
+    color: #fff;
+}
+  
+#activities h4 {
+    display: flex;
+    color: #D5DD3C;
+    padding-left: 211px;
+}
+  
+.activities-crossfit {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/crossfit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+  
+.activities-box {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/box.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+  
+.activities-funtional {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/funtional.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+  
+.activities-spinning {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/spinning.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+  
+.activities-fitness {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/fitness.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+
+#memberships {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+#memberships .secondary-title {
+    margin-top: auto;
+}
+  
+#memberships h3 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 80px;
+}
+  
+#memberships h4 {
+    color: #D5DD3C;
+    padding-left: 180px;
+}
+  
+#memberships li {
+    color: #E3EC39;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 5px 5px #000;
+}
+  
+#memberships p {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    text-shadow: 0px 1px 5px #000;
+    margin-top: 27px;
+}
+  
+.member-only-classes {
+    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/classesonly.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 5px);
+    /* height: 400px;
+    width: 100px; */
+    border-radius: 30px;
+    /* margin-left: -20px;
+    margin-bottom: 70px; */
+}
+  
+.member-classic {
+    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/classicmembership.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0px 4px 6px);
+    /* height: 399px;
+    width: 100px; */
+    border-radius: 30px;
+    /* margin-left: -20px;
+    margin-bottom: 70px; */
+}
+  
+.member-black {
+    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/blackmembership.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0px 4px 6px);
+    /* height: 400px;
+    width: 200px; */
+    border-radius: 30px;
+    /* margin-left: -20px;
+    margin-bottom: 70px; */
+}
+  
+#our-story .our-story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+
+#our-story h3 {
+    color: #fff;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    line-height: 100px;
+    text-shadow: 2px 3px#000;
+}
+  
+#our-story h4 {
+    color: #D5DD3C;
+    padding-left: 146px;
+    font-size: 60px;
+    line-height: 10px;
+    text-shadow: 2px 3px#000;
+}
+#our-story .our-story-text {
+    background-color: #E0E0E0;
+    opacity: 90%;
+    border-radius: 12px;
+    width: 320px;
+    margin: 49px 0px 0 10px;
+    padding: 29px 26px;
+}
+  
+#our-story p {
+    text-align: center;
+    text-align-last: center;
+    color: #404040;
+}
+
+@media screen and (min-width: 1025px) {
+    .main-aside {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        background-color: #D5DD3C;
+        color: #000000;
+        opacity: 90%;    
+    }
+   #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../Assets/Images/inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+    width: 100%;
+    margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-aside {
+        display: none;
+    }
+    #home {
+        width: 100%;
+        text-align: center;
+    }
+    #home h2 {
+        letter-spacing: 3px;
+    }
+    #home h3 {
+        letter-spacing: 3px;
+        padding-left: 110px;
+    }
+        
+    #features li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px auto;
+    }
+    #activities ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    #memberships li {
+        color: #E3EC39;
+        font-size: 30px;
+        text-align: center;
+        text-shadow: 0px 5px 5px #000;
+        padding: 2rem 0;
+    }
+    .member-only-classes {
+        width: 90%;
+        height: 27rem;
+        margin: 2rem auto;
+    }
+    .member-black {
+        width: 90%;
+        height: 27rem;
+        margin: 2rem auto;
+    }
+    .member-classic {
+        width: 90%;
+        height: 27rem;
+        margin: 2rem auto;
+    }
+    #our-story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

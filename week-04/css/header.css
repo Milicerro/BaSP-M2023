@@ -1,0 +1,114 @@
+
+.container-header {
+  min-width: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  width: 100%;
+  background-color: #323232;
+  margin: 0;
+}
+.navbar-default-main  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 100px;
+}
+  .navbar-default-main img {
+    height: 6em;
+    width: 6em;
+  }
+
+  /* .buttoms {
+    display: flex;
+    margin: 10px 20px;
+    align-self: center;
+  } */
+
+  .header-sandwich img {
+    margin-right: 3rem;
+    width: 2em;
+    height: 2em;
+  }
+  
+  .header-buttom {
+    display: none;
+    width: 158px;
+    height: 76px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 40px;
+  }
+  
+  .header-buttom a {
+    display: none;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.6;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  
+  .header-buttom img {
+    padding-top: 21px;
+    padding-left: 12px;
+    height: 35px;
+    width: 35px;
+  }
+  
+  .navbar-default h1 {
+    color: #E3EC39;
+    font-size: 1.3em;
+    text-shadow: 1px 2px #000;
+    text-transform: uppercase;
+  }
+
+@media screen and (min-width: 1025px) {
+  .navbar-default h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .header-buttoms {
+    width: 158px;
+    height: 76px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 40px;
+  }
+
+  .header-sandwich {
+    display: none;
+  }
+
+  .navbar-default-main img  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+  }
+  
+}
+
+@media screen and (max-width: 601px) {
+  .navbar-default h1 {
+      display: none;
+  }
+  .header-buttoms {
+      display: none;
+  }
+}
+

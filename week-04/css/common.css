@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #979797;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color:#000;
+  }
+  
+  a:hover {
+    color: #323232;
+  }
+  
+  a:active {
+    color: #979797,
+  }
+  
+  a:visited {
+    color: #373867;
+  }
+
+  ul {
+    list-style-type: none;
+  }

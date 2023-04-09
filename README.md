@@ -12,8 +12,13 @@ In the second week, we have to do the HTML code of the landing page, wich is the
 To achieve this, we have to only use HTML, this is basic structure and the basic tags.
 
 ## Week 03
-In this third week, we take the html code and add styles with css, always trying to achieve the landing page of the app.
+In the third week, we take the html code and add styles with css, always trying to achieve the landing page of the app.
 This project was individual, but I still received help from my teammates.
+
+## Week 04
+in this fourth week, we had to make the landing page responsive. To make that, we had to use the FlexBox CSS to achieve it.
+Also, in this week, we include the mobile and the tablet design. That is were the responsive part came. We had to start editing the initial HTML code of the Week-02 with the CSS code of the last week, to made the mobile first design, then, of that design we had to adap for tablet and desktop. 
+
 
 ## This is the Landing page;
 ![Landing page](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/landin-page.png)

@@ -25,3 +25,14 @@
   ul {
     list-style-type: none;
   }
+
+  .secondary-title, #home h2, h3{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #home h2, h3 {
+    letter-spacing: 3px;
+}

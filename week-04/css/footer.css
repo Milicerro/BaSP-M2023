@@ -11,8 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 1rem;
-    gap: 2rem;
+    padding-left: 3.5rem;
+    gap: 3rem;
   }
 
   #footer .container-social a {
@@ -22,8 +22,8 @@
   }
   
   #footer .container-social img {
-    height: 35px;
-    width: 35px;
+    height: 3rem;
+    width: 3rem;
   }
   
   #footer .copy {
@@ -31,6 +31,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-right: 1rem;
   }
   
   #footer .copy span {
@@ -53,7 +54,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #fff;
   }
 
@@ -65,6 +66,7 @@
     text-align: center;
     width: 37rem;
     color: #000;
+    font-size: 1.5rem;
   }
 
   #footer .container-social img {
@@ -119,6 +121,7 @@
     text-align: center;
     width: 18rem; 
     color:#000;
+    font-size: 1.5rem;
   }
   #footer .container-social img {
     display: flex;

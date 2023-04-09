@@ -11,7 +11,6 @@
   
   a {
     text-decoration: none;
-    color:#000;
   }
   
   a:hover {
@@ -22,10 +21,6 @@
     color: #979797,
   }
   
-  a:visited {
-    color: #373867;
-  }
-
   ul {
     list-style-type: none;
   }

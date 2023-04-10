@@ -7,7 +7,7 @@
   margin: 0;
 }
 
-.navbar-default-main  {
+.navbar-default-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,9 +25,9 @@
   margin-right: 3rem;
   width: 2em;
   height: 2em;
- }
+}
 
- .buttoms {
+.buttoms {
   float: right;
   margin: 1rem 2rem;
 }
@@ -40,8 +40,8 @@
   margin: 0 1rem;
   padding: 0 .5rem;
 }
-  
-.header-buttom a { 
+
+.header-buttom a {
   display: flex;
   align-self: center;
   font-size: 1rem;
@@ -87,10 +87,10 @@
     background-color: #fff;
     border-radius: 10px;
     width: 7rem;
-    height: 3rem; 
+    height: 3rem;
   }
  
-  .navbar-default-main img  {
+  .navbar-default-main img {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 601px){ 
+@media screen and (min-width:390px) and (max-width: 601px) {
   .container-header {
     display: flex;
     flex-direction: row;

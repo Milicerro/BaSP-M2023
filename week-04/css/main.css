@@ -1,4 +1,3 @@
-
 .main-aside ul {
     display: flex;
     flex-direction: column;
@@ -16,12 +15,12 @@
     justify-content: center;
     flex-direction: column;
     width: auto;
-} 
-  
+}
+
 .container-aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .main-aside li {
@@ -40,7 +39,7 @@
     height: 20px;
     width: 20px;
 }
-  
+
 .main-aside p {
     color: #000;
     font-size: 17px;
@@ -57,20 +56,20 @@
     height: 690px;
     width: auto;
 }
-  
+
 #home h2 {
     color: #fff;
     text-shadow: 2px 3px #000;
     padding-top: 70px;
     padding-right: 75px;
 }
-  
+
 #home h3 {
     color: #E3EC39;
     text-shadow: 2px 3px #000;
     padding-right: 20px;
 }
-  
+
 #home p {
     color: #ffffff;
     text-shadow: 1px 2px #000;
@@ -82,29 +81,24 @@
     padding-top: 90px;
     padding-right: 83px;
 }
-  
+
 #features h3 {
     display: flex;
     color: #D5DD3C;
     padding-left: 190px
 }
-  
-.secondary-title {
-    line-height: 60px;
-    text-shadow: 2px 3px#000;
-}
-  
+
 #features li {
     text-transform: uppercase;
     text-align: center;
 }
-  
+
 #features h4 {
     font-size: 20px;
     color: #E3EC39;
     text-shadow: 1px 5px 10px #000;
 }
-  
+
 #features p {
     display: flex;
     justify-content: center;
@@ -114,54 +108,37 @@
     line-height: 35px;
     text-shadow: 3px 5px 8px #000;
 }
-  
+
+.conteiner-features {
+    width: 90%;
+}
+
+.conteiner-features li {
+    filter: drop-shadow(1px 2px 5px #000);
+    height: 160px;
+    width: 90%;
+    padding-top: 90px;
+    border-radius: 30px;
+    margin: 50px -8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .features-cards-reservation {
     background-image: url("../../Assets/Images/reservation.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(1px 2px 5px #000);
-    height: 179px;
-    width: 330px;
-    padding-top: 90px;
-    border-radius: 30px;
-    margin: 50px -8px;
 }
-  
+
 .features-cards-schedule {
-    background-image: url("../../Assets/Images/schuedel.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(1px 2px 5px #000);
-    height: 179px;
-    width: 330px;
-    padding-top: 90px;
-    border-radius: 30px;
-    margin: 50px -8px;
+    background-image: url("../../Assets/Images/landing-schedule-background.jpg");
 }
-  
+
 .features-cards-memberships {
     background-image: url("../../Assets/Images/membership.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: drop-shadow(1px 2px 5px #000);
-    height: 179px;
-    width: 330px;
-    padding-top: 90px;
-    border-radius: 30px;
-    margin: 50px -8px;
 }
-  
+
 .features-cards-contact {
     background-image: url("../../Assets/Images/contacto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: drop-shadow(1px 2px 5px #000);
-    height: 179px;
-    width: 330px;
-    padding-top: 90px;
-    border-radius: 30px;
-    margin: 50px -8px;
 }
 
 #contact-us {
@@ -174,24 +151,26 @@
     padding-right: 45px;
     color: #fff;
 }
-  
+
 #contact-us h4 {
     color: #D5DD3C;
     padding-left: 247px;
 }
-  
+
 #contact-us .secondary-title {
     margin-top: auto;
     display: flex;
     flex-direction: column;
 }
-  
+
+#contact-us form {
+    background-color: #fff;
+}
+
 .form-contact-us {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    background-color: #fff;
-    background-position: center;
 }
 
 .form-contact-us input, select {
@@ -201,7 +180,7 @@
     color: #323232;
 }
 
-.form-contact-us button {
+#contact-us button {
     background-color: #E3EC39;
     border: none;
     border-radius: 7px;
@@ -213,7 +192,7 @@
     color: #000;
 }
 
-.form-contact-us textarea {
+.contact-us-divs textarea {
     border-radius: 18px;
     border: solid #00000000;
     background-color: #d4cdcd;
@@ -224,7 +203,7 @@
     display: flex;
     align-items: center;
 }
-  
+
 #activities .secondary-title {
     display: flex;
     flex-direction: column;
@@ -238,22 +217,22 @@
     text-align: center;
     text-transform: uppercase;
     text-shadow: 1px 5px 5px #000;
-    background-color: hsla(0, 0%, 7%, 0.568);
+    background-color: #0f0f0f8c;
     border-radius: 102px;
 }
-  
+
 #activities h3 {
     display: flex;
     padding-right: 60px;
     color: #fff;
 }
-  
+
 #activities h4 {
     display: flex;
     color: #D5DD3C;
     padding-left: 211px;
 }
-  
+
 .activities-crossfit {
     text-decoration: none;
     background-image: url("../../Assets/Images/crossfit.jpg");
@@ -266,7 +245,7 @@
     border-radius: 30px;
     margin: 40px 0px;
 }
-  
+
 .activities-box {
     text-decoration: none;
     background-image: url("../../Assets/Images/box.png");
@@ -279,7 +258,7 @@
     border-radius: 30px;
     margin: 40px 0px;
 }
-  
+
 .activities-funtional {
     text-decoration: none;
     background-image: url("../../Assets/Images/funtional.jpg");
@@ -292,7 +271,7 @@
     border-radius: 30px;
     margin: 40px 0px;
 }
-  
+
 .activities-spinning {
     text-decoration: none;
     background-image: url("../../Assets/Images/spinning.png");
@@ -305,7 +284,7 @@
     border-radius: 30px;
     margin: 40px 0px;
 }
-  
+
 .activities-fitness {
     text-decoration: none;
     background-image: url("../../Assets/Images/fitness.jpg");
@@ -325,23 +304,23 @@
     justify-content: center;
     align-items: center;
 }
-  
+
 #memberships .secondary-title {
     margin-top: auto;
 }
-  
+
 #memberships h3 {
     display: flex;
     flex-direction: column;
     color: #fff;
     padding-top: 80px;
 }
-  
+
 #memberships h4 {
     color: #D5DD3C;
     padding-left: 180px;
 }
-  
+
 #memberships li {
     color: #E3EC39;
     font-size: 30px;
@@ -349,7 +328,7 @@
     text-align: center;
     text-shadow: 0px 5px 5px #000;
 }
-  
+
 #memberships p {
     display: flex;
     flex-direction: column;
@@ -359,19 +338,19 @@
     text-shadow: 0px 1px 5px #000;
     margin-top: 27px;
 }
-  
+
 .member-only-classes {
     text-decoration: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/classesonly.png");
+    background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/classesonly.png");
     background-repeat: no-repeat;
     background-size: cover;
     filter: drop-shadow(0px 4px 5px);
     border-radius: 30px;
 }
-  
+
 .member-classic {
     text-decoration: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/classicmembership.png");
+    background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/classicmembership.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -379,17 +358,17 @@
     border-radius: 30px;
 
 }
-  
+
 .member-black {
     text-decoration: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Images/blackmembership.jpg");
+    background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/blackmembership.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: drop-shadow(0px 4px 6px);
     border-radius: 30px;
 }
-  
+
 #our-story .our-story{
     display: flex;
     flex-direction: column;
@@ -398,7 +377,6 @@
 
 #our-story h3 {
     color: #fff;
-    padding-left: 70px;
     padding-bottom: 10px;
     font-size: 60px;
     line-height: 100px;
@@ -429,26 +407,33 @@
 }
 
 @media screen and (min-width: 1025px) {
-    .main-aside {
-        display: flex;
-        justify-content: space-between;
-        width: 20%;
-        background-color: #D5DD3C;
-        color: #000000;
-        opacity: 90%; 
-    }
-
     .conteiner-main {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: auto;
     }
-    .container-aside {
+
+    .main-aside {
+        display: flex;
+        flex-direction: column;
+
+        width: 20%;
+        background-color: #D5DD3C;
+        color: #000000;
+        opacity: 90%; 
+        padding-bottom: 5rem;
+    }
+
+    .main-aside .container-aside {
         display: flex;
         align-items: center;
-        width: 100%;
+        position: sticky;
+        top: 0;
+        margin-left: 2.5rem;
+        gap: 10rem;
     }
+
     .container-direccion-numero {
         display: flex;
         flex-direction: column;
@@ -460,6 +445,7 @@
         gap: 1rem;
         padding: 1rem 0;
     }
+
     .container-aside ul {
         text-align: center;
     }
@@ -481,6 +467,7 @@
         align-self: center;
         letter-spacing: 1rem;
     }
+
     #home h3 {
         font-size: 6rem;
         align-self: flex-end;
@@ -510,6 +497,7 @@
     #features h2, h3 {
         font-size: 5.5rem;
     }
+
     #features h3 {
         padding-left: 20rem;
     }
@@ -531,52 +519,68 @@
         padding-left: 27rem;
     }
 
-    .form-contact-us {
+    #contact-us form {
         display: flex;
         flex-direction: column;
-        margin: 3rem auto;
-        padding: 61px 0 22px 44px;
-        height: 528px;
+        justify-content: center;
+        height: 491px;
+        width: 90%;
+        margin: 2rem auto;
+        border-radius: 30px;
+    }
+
+    .form-contact-us {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
     }
 
     .form-contact-us input, select {
-        width: 220px;
-        height: 50px;
-        padding: 1px 6px;
-        box-sizing: border-box;
-        text-align: left;
+        width: 222px;
+        height: 48px;
+        padding: 1px 3px;
+        display: flex;
+        align-self: flex-start;
     }
 
-    .form-contact-us button {
+    #contact-us form button {
         Width: 80px;
         height: 42px;
-        margin-left: 477px;
+        margin: auto;
     }
 
     .form-contact-us label {
-        font-weight: 800;
         font-size: 18px;
         line-height: 1;
         color: #000;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
-    .form-contact-us textarea {
-        width: 5rem;
-        height: 150px;
-        position: relative;
-        top: 60px;
-    }
     .contact-us-divs {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        align-self: center;
+        align-items: flex-start;
+        margin: 1rem .5rem;
     }
-    .contact-us-divs  textarea {
+
+    .contact-us-divs textarea {
         display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 150px;
+        margin: auto;
+        padding: 3px 25px;;
+    }
+
+    .contact-us-divs label {
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+        margin: 1rem 1.5rem;
     }
 
     #activities h4 {
@@ -591,6 +595,7 @@
         justify-content: space-evenly;
         align-items: center;
     }
+
     .activities-crossfit {
         margin-left: 10rem;
     }
@@ -599,7 +604,7 @@
         font-size: 4.5rem;
         padding-left: 31rem;
     }
-    
+
     #memberships li {
         display: flex;
         flex-direction: column;
@@ -638,6 +643,7 @@
         width: 100%;
         margin-bottom: 4rem;
     }
+
     #our-story .our-story-text {
         width: 31rem;
         margin: 127px 0px 0 17px;
@@ -645,14 +651,14 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .main-aside {
         display: none;
     }
 
     #home {
         width: 100%;
-        height: 60rem;
+        height: 65rem;
         text-align: center;
     }
 
@@ -673,8 +679,195 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
     }
-        
+
+    .conteiner-features {
+        height: auto;
+    }
+
+    #features li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    #activities ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .activities-crossfit, .activities-box, .activities-funtional, .activities-spinning, .activities-fitness {
+        width: 80%;
+        height: 300px;
+        background-position: center;
+    }
+
+    #activities li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #memberships h3 {
+        font-size: 4rem;
+        padding-right: 18rem;
+    }
+
+    #memberships h4 {
+        font-size: 4rem;
+    }
+
+    #memberships li {
+        padding: 2rem 0;
+    }
+
+    .member-only-classes {
+        width: 100%;
+        height: 30rem;
+        margin: 2rem auto;
+    }
+
+    .member-black {
+        width: 100%;
+        height: 30rem;
+        margin: 2rem auto;
+    }
+
+    .member-classic {
+        width: 100%;
+        height: 30rem;
+        margin: 2rem auto;
+    }
+
+    #contact-us form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 90%;
+        margin: 2rem auto;
+        border-radius: 30px;
+    }
+
+    .form-contact-us {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .form-contact-us input, select {
+        width: 220px;
+        height: 40px;
+        padding: 1px 3px;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    #contact-us form button {
+        Width: 80px;
+        height: 42px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .form-contact-us label {
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    .contact-us-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us-divs textarea {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 3px 25px;;
+    }
+
+    .contact-us-divs label {
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+        margin: 1rem 1.5rem;
+    }
+
+    #our-story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #our-story .our-story-text {
+        width: 80%;
+        margin: 62px 0px 0 6px;
+        padding: 69px 26px;
+    }
+
+    #our-story h3 {
+        padding-right: 9rem;
+    }
+}
+
+@media screen and (min-width:390px) and (max-width: 601px) {
+    .main-aside {
+        display: none;
+    }
+
+    #home {
+        width: 100%;
+        height: 60rem;
+        text-align: center;
+    }
+
+    #home h3 {
+        padding-left: 110px;
+    }
+
+    #home p {
+        font-size: 20px;
+        padding-top: 80px;
+    }
+
+    #contact-us h4 {
+        font-size: 3.5rem;
+    }
+
+    .secondary-title {
+        font-size: 2rem;
+    }
+
+    #features .conteiner-features {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
     #features li {
         display: flex;
         flex-direction: column;
@@ -693,10 +886,6 @@
     }
 
     #memberships li {
-        color: #E3EC39;
-        font-size: 30px;
-        text-align: center;
-        text-shadow: 0px 5px 5px #000;
         padding: 2rem 0;
     }
 
@@ -718,75 +907,82 @@
         margin: 2rem auto;
     }
 
-    #our-story {
+    #contact-us form {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .form-contact-us {
+        height: auto;
+        width: 90%;
+        margin: 2rem auto;
         border-radius: 30px;
-        background-color: #fff;
-        background-position: center;
-        margin: 43px 25px 1px 25px;
-        padding: 18px 5px 15px 5px;
-        height: 680px;
-        Width: auto;
     }
-      
+
+    .form-contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
     .form-contact-us input, select {
-        width: 286px;
-        height: 39px;
-        padding: 1px 6px;
-        border: 1.5px solid #373867;
-        border-radius: 4px;
-        box-sizing: border-box;
-        background-color: #d4cdcd;
-        color: #323232;
+        width: 250px;
+        height: 30px;
+        padding: 1px 3px;
+        display: flex;
+        align-self: flex-start;
     }
-      
-    .form-contact-us button {
-        background-color: #E3EC39;
-        border: none;
-        border-radius: 7px;
+
+    #contact-us form button {
         Width: 80px;
         height: 42px;
-        position: relative;
-        top: 125px;;
+        margin: auto;
+        margin-bottom: 2rem;
     }
-      
-    .form-contact-us label {
-        font-weight: 800;
+
+    .contact-us-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us-divs textarea {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 150px;
+        margin: auto;
+        padding: 3px 25px;;
+        margin-bottom: 2rem;
+    }
+
+    .contact-us-divs label {
         font-size: 18px;
         line-height: 1;
         color: #000;
-        margin-bottom: 10px;
+        margin: 1rem;
     }
-      
-    .form-contact-us textarea {
-        width: 293px;
-        height: 134px;
-        padding: 15px 0px;
-        margin: -38px 0px;
-        border-radius: 10px;
-        border: solid #00000000;
-        background-color: #d4cdcd;
-        color: #323232;
-        position: relative;
-        top: 60px;
-     }
 
-     .contact-us-divs {
-        display: flex;
-        flex-direction: column;
-        padding: .5rem;
-     }
-     
     #activities ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+    
+    #our-story {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #our-story h3 {
+        padding-right: 9rem;
+    }
+
+    #our-story .our-story-text {
+        margin: 50px 10px 0 10px;
     }
 }

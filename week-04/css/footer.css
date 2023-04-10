@@ -1,3 +1,24 @@
+#footer {
+  background-color: #323232;
+}
+
+#footer .conteiner-social a {
+  color:#fff;
+}
+
+#footer .conteiner-social img {
+  height: 35px;
+  width: 35px;
+}
+
+.container-direccion-numero {
+    color: #535151;
+    text-shadow: 1px 1px #5a59597a;
+}
+
+#footer .copy span {
+  color:#fff;
+}
 @media screen and (min-width: 1025px) {
   #footer {
     display: flex;
@@ -25,13 +46,17 @@
     height: 3rem;
     width: 3rem;
   }
+
+  #footer .container-direccion-numero {
+   display: none;
+  }
   
   #footer .copy {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   
   #footer .copy span {
@@ -45,7 +70,7 @@
   #footer {
     height: auto;
     background-color: #C4C4C4;
-    padding: 2rem 0  0 0;
+    padding: 2rem 0 0 0;
     margin-top: 194px;
   }
 
@@ -66,7 +91,7 @@
     text-align: center;
     width: 37rem;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #footer .container-social img {
@@ -74,9 +99,24 @@
     justify-content: center;
     flex-direction: column;
     align-self: center;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     margin: auto;
+  }
+  
+  #footer .container-direccion-numero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    gap: 1rem;
+    margin: 3.3rem;
+  }
+
+  #footer .img-aside {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
   }
 
   #footer .copy {
@@ -84,7 +124,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 45px; 
+    margin-top: 45px;
   }
 
   #footer .copy span {
@@ -98,7 +138,7 @@
 
 @media screen and (min-width:390px) and (max-width: 601px) {
   #footer {
-    height: 500px;
+    height: 505px;
     width: auto;
     background-color: #C4C4C4;
     margin-top: 194px;
@@ -113,6 +153,7 @@
     color:#000;
     padding-top: 2rem;
   }
+
   #footer .container-social a {
     display: flex;
     flex-direction: column;
@@ -123,6 +164,7 @@
     color:#000;
     font-size: 1.5rem;
   }
+
   #footer .container-social img {
     display: flex;
     justify-content: center;
@@ -132,13 +174,29 @@
     width: 50px;
     margin: auto;
   }
+
+  #footer .container-direccion-numero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+  }
+
+  #footer .img-aside {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+  }
+
   #footer .copy {
-    padding-bottom: 1rem; 
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 45px;
   }
+
   #footer .copy span {
     display: flex;
     align-self: center;

@@ -21,6 +21,9 @@ Also, in this week, we include the mobile and the tablet design. That is were th
 
 ## 🔗 Links
 If you want to see what I'm working on, click on the blue link!! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/week-04/index.html)
+##### (min-width: 390px) and (max-width: 600px) // styles corresponding to mobile
+##### (min-width: 601px) and (max-width: 1024px) // styles corresponding to tablet
+##### (min-width: 1025px) // styles corresponding to desktop
 
 ## This is the Landing page;
 ![Landing page](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/landin-page.png)

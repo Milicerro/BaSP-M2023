@@ -119,6 +119,7 @@
     color: #E3EC39;
     text-shadow: 0px 5px 10px #000;
 }
+
 #features p {
     display: flex;
     justify-content: center;
@@ -170,7 +171,6 @@
     background-image: url("../../Assets/Images/contacto.jpg");
 }
 
-
 #contact-us .secondary-title {
     margin-top: auto;
     display: flex;
@@ -203,7 +203,6 @@
     color: #D5DD3C;
     padding-left: 247px;
 }
-
 
 .form-contact-us {
     display: flex;
@@ -413,6 +412,7 @@
     text-shadow: 0px 1px 5px #000;
     margin-top: 27px;
 }
+
 .member-only-classes {
     width: 90%;
     height: 27rem;
@@ -474,7 +474,6 @@
     line-height: 10px;
     text-shadow: 2px 3px#000;
 }
-
 
 #our-story .our-story-text {
     background-color: #E0E0E0;
@@ -565,13 +564,13 @@
         padding-top: 1.5rem;
     }
 
-    .conteiner-features {
+    #features .conteiner-features {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding-top: 35px;
-        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin: 0 auto;
     }
 
     .conteiner-features li {

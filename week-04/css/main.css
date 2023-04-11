@@ -1,3 +1,13 @@
+.main-aside {
+    display: none;
+}
+
+.conteiner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .main-aside ul {
     display: flex;
     flex-direction: column;
@@ -50,11 +60,12 @@
 }
 
 #home {
+    width: 100%;
+    height: 60rem;
+    text-align: center;
     background-image: url("../../Assets/Images/inicio-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 690px;
-    width: auto;
 }
 
 #home h2 {
@@ -68,11 +79,26 @@
     color: #E3EC39;
     text-shadow: 2px 3px #000;
     padding-right: 20px;
+    padding-left: 110px;
 }
 
 #home p {
+    font-size: 20px;
+    padding-top: 80px;
     color: #ffffff;
     text-shadow: 1px 2px #000;
+}
+
+.secondary-title {
+    font-size: 2rem;
+}
+
+#features .conteiner-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
 #features h2 {
@@ -88,25 +114,19 @@
     padding-left: 190px
 }
 
-#features li {
-    text-transform: uppercase;
-    text-align: center;
-}
-
 #features h4 {
-    font-size: 20px;
+    font-size: 1.7rem;
     color: #E3EC39;
-    text-shadow: 1px 5px 10px #000;
+    text-shadow: 0px 5px 10px #000;
 }
-
 #features p {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 22px;
+    font-size: 1rem;
     line-height: 35px;
-    text-shadow: 3px 5px 8px #000;
+    text-shadow: 0px 5px 8px #000;
 }
 
 .conteiner-features {
@@ -125,6 +145,15 @@
     background-size: cover;
 }
 
+#features li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto;
+}
+
 .features-cards-reservation {
     background-image: url("../../Assets/Images/reservation.png");
 }
@@ -141,10 +170,28 @@
     background-image: url("../../Assets/Images/contacto.jpg");
 }
 
+
+#contact-us .secondary-title {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 #contact-us {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#contact-us form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 30px;
 }
 
 #contact-us h3 {
@@ -157,33 +204,57 @@
     padding-left: 247px;
 }
 
-#contact-us .secondary-title {
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#contact-us form {
-    background-color: #fff;
-}
 
 .form-contact-us {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
     border-radius: 30px;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .form-contact-us input, select {
+    width: 250px;
+    height: 30px;
+    padding: 1px 3px;
+    display: flex;
+    align-self: flex-start;
     border: 1.5px solid #373867;
     border-radius: 4px;
     background-color: #d4cdcd;
     color: #323232;
 }
 
-#contact-us button {
+#contact-us form button {
+    Width: 80px;
+    height: 42px;
+    margin: auto;
+    margin-bottom: 2rem;
     background-color: #E3EC39;
     border: none;
     border-radius: 7px;
+}
+
+.contact-us-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us-divs textarea {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    padding: 3px 25px;;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+    border: solid #00000000;
+    background-color: #d4cdcd;
+    color: #323232;
 }
 
 .form-contact-us label {
@@ -192,16 +263,11 @@
     color: #000;
 }
 
-.contact-us-divs textarea {
-    border-radius: 18px;
-    border: solid #00000000;
-    background-color: #d4cdcd;
-    color: #323232;
-}
-
-.contact-us-divs {
-    display: flex;
-    align-items: center;
+.contact-us-divs label {
+    font-size: 18px;
+    line-height: 1;
+    color: #000;
+    margin: 1rem;
 }
 
 #activities .secondary-title {
@@ -209,6 +275,14 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 100px;
+}
+
+#activities ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
 }
 
 #activities li {
@@ -327,6 +401,7 @@
     text-transform: uppercase;
     text-align: center;
     text-shadow: 0px 5px 5px #000;
+    padding: 2rem 0;
 }
 
 #memberships p {
@@ -338,8 +413,10 @@
     text-shadow: 0px 1px 5px #000;
     margin-top: 27px;
 }
-
 .member-only-classes {
+    width: 90%;
+    height: 27rem;
+    margin: 2rem auto;
     text-decoration: none;
     background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/classesonly.png");
     background-repeat: no-repeat;
@@ -349,6 +426,9 @@
 }
 
 .member-classic {
+    width: 90%;
+    height: 27rem;
+    margin: 2rem auto;
     text-decoration: none;
     background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/classicmembership.png");
     background-repeat: no-repeat;
@@ -356,10 +436,12 @@
     background-position: center;
     filter: drop-shadow(0px 4px 6px);
     border-radius: 30px;
-
 }
 
-.member-black {
+.member-black{
+    width: 90%;
+    height: 27rem;
+    margin: 2rem auto;
     text-decoration: none;
     background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/blackmembership.jpg");
     background-repeat: no-repeat;
@@ -369,13 +451,15 @@
     border-radius: 30px;
 }
 
-#our-story .our-story{
+#our-story {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #our-story h3 {
+    padding-right: 9rem;
     color: #fff;
     padding-bottom: 10px;
     font-size: 60px;
@@ -391,13 +475,14 @@
     text-shadow: 2px 3px#000;
 }
 
+
 #our-story .our-story-text {
     background-color: #E0E0E0;
     opacity: 90%;
     border-radius: 12px;
     width: 320px;
-    margin: 49px 0px 0 10px;
     padding: 29px 26px;
+    margin: 50px 10px 0 10px;
 }
 
 #our-story p {
@@ -415,9 +500,9 @@
     }
 
     .main-aside {
+        visibility: visible;
         display: flex;
         flex-direction: column;
-
         width: 20%;
         background-color: #D5DD3C;
         color: #000000;
@@ -523,7 +608,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 491px;
         width: 90%;
         margin: 2rem auto;
         border-radius: 30px;
@@ -551,6 +635,7 @@
         Width: 80px;
         height: 42px;
         margin: auto;
+        margin-bottom: 1rem
     }
 
     .form-contact-us label {
@@ -571,8 +656,6 @@
         display: flex;
         flex-direction: column;
         width: 90%;
-        height: 150px;
-        margin: auto;
         padding: 3px 25px;;
     }
 
@@ -829,160 +912,5 @@
 
     #our-story h3 {
         padding-right: 9rem;
-    }
-}
-
-@media screen and (min-width:390px) and (max-width: 601px) {
-    .main-aside {
-        display: none;
-    }
-
-    #home {
-        width: 100%;
-        height: 60rem;
-        text-align: center;
-    }
-
-    #home h3 {
-        padding-left: 110px;
-    }
-
-    #home p {
-        font-size: 20px;
-        padding-top: 80px;
-    }
-
-    #contact-us h4 {
-        font-size: 3.5rem;
-    }
-
-    .secondary-title {
-        font-size: 2rem;
-    }
-
-    #features .conteiner-features {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    #features li {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-transform: uppercase;
-        text-align: center;
-        margin: 30px auto;
-    }
-
-    #activities ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-    }
-
-    #memberships li {
-        padding: 2rem 0;
-    }
-
-    .member-only-classes {
-        width: 90%;
-        height: 27rem;
-        margin: 2rem auto;
-    }
-
-    .member-black {
-        width: 90%;
-        height: 27rem;
-        margin: 2rem auto;
-    }
-
-    .member-classic {
-        width: 90%;
-        height: 27rem;
-        margin: 2rem auto;
-    }
-
-    #contact-us form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        width: 90%;
-        margin: 2rem auto;
-        border-radius: 30px;
-    }
-
-    .form-contact-us {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: .5rem;
-        align-items: center;
-        margin-top: 2rem;
-    }
-
-    .form-contact-us input, select {
-        width: 250px;
-        height: 30px;
-        padding: 1px 3px;
-        display: flex;
-        align-self: flex-start;
-    }
-
-    #contact-us form button {
-        Width: 80px;
-        height: 42px;
-        margin: auto;
-        margin-bottom: 2rem;
-    }
-
-    .contact-us-divs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-us-divs textarea {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: 150px;
-        margin: auto;
-        padding: 3px 25px;;
-        margin-bottom: 2rem;
-    }
-
-    .contact-us-divs label {
-        font-size: 18px;
-        line-height: 1;
-        color: #000;
-        margin: 1rem;
-    }
-
-    #activities ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #our-story {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    #our-story h3 {
-        padding-right: 9rem;
-    }
-
-    #our-story .our-story-text {
-        margin: 50px 10px 0 10px;
     }
 }

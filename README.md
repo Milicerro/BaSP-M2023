@@ -2,6 +2,9 @@
 
 ##### This project is based on the idea of creating a website for a gym. This website has several profiles with their respective functions. It is a working progress that week by week I am editing and uploading the changes. That means a new language will be added to the code every week, until the initial web page is rebuilt.
 
+## This project is for:
+![Logo](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/radiumrocket.png)
+
 ## Week 01
 In the first week we aimed to make a screenflow with different interactions, which we had to achieve using the Figma app.
 The screenflow was based on a gym website.
@@ -15,23 +18,25 @@ To achieve this, we have to only use HTML, this is basic structure and the basic
 In the third week, we take the html code and add styles with css, always trying to achieve the landing page of the app.
 This project was individual, but I still received help from my teammates.
 
-## Week 04
-In this fourth week, we had to make the landing page responsive. To make that, we had to use the FlexBox CSS to achieve it.
-Also, in this week, we include the mobile and the tablet design. That is were the responsive part came. We had to start editing the initial HTML code of the Week-02 with the CSS code of the last week, to made the mobile first design, then, of that design we had to adap for tablet and desktop.
-
-## 🔗 Links
-If you want to see what I'm working on, click on the blue link!! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/week-04/index.html)
-##### (min-width: 390px) and (max-width: 600px) // styles corresponding to mobile
-##### (min-width: 601px) and (max-width: 1024px) // styles corresponding to tablet
-##### (min-width: 1025px) // styles corresponding to desktop
-
 ## This is the Landing page;
 ![Landing page](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/landin-page.png)
 
-## This project is for:
-![Logo](https://github.com/Milicerro/BaSP-M2023/blob/master/Assets/Images/radiumrocket.png)
+## Week 04
+In the fourth week, we had to make the landing page responsive. To make that, we had to use the FlexBox CSS to achieve it.
+Also, in that week, we included the mobile and the tablet design. That was for the responsive part came. We had to start editing the initial HTML code of the Week-02 with the CSS code of the Week-03, to made the mobile first design, then, of that design we had to adap for tablet and desktop.
 
-## Color Reference
+## 🔗 Link Week-04
+If you want to see what I was working on in Week-04, click on the blue link!! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/week-04/index.html)
+
+## Week 05
+In this fifth week, we have to work with JavaScript. During the week, we develop exercises using this programming language.
+Just to comment, this particular week is just for practicing and getting to know the language.
+
+## 🔗 Link Week-05
+If you want to see what I'm working on this Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-05/index.html)
+
+
+## Color Reference of the layouts
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -43,7 +48,3 @@ If you want to see what I'm working on, click on the blue link!! [Mega Rocket](h
 
 ## Created by
 - Milagros Cerro
-
-
-## 🛠 Skills
-HTML, CSS...

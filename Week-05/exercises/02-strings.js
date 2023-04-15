@@ -9,7 +9,7 @@ var myUser = 'milagros01';
 
 console.log(myUser.toUpperCase());
 
-/* b- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string 
+/* b- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
 con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
 
 console.log('excercise-02.b');
@@ -19,7 +19,7 @@ var newPw = myPw.substring(0,5);
 
 console.log(newPw);
 
-/* c- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string 
+/* c- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
 con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
 
 console.log('excercise-02.c');
@@ -29,8 +29,8 @@ var cuak = duck.substring(8,11);
 
 console.log(cuak);
 
-/* d- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra 
-en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable 
+/* d- Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra
+en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable
 (utilizar substring, toUpperCase, toLowerCase y el operador +).*/
 
 console.log('excercise-02.d');
@@ -41,7 +41,7 @@ var theGoat = messi.substring(1,11);
 
 console.log(messi10.toUpperCase() + theGoat.toLowerCase());
 
-/* e- Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. 
+/* e- Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco.
 Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf)*/
 
 console.log('excercise-02.e');
@@ -51,8 +51,8 @@ var space = lola.indexOf(' ');
 
 console.log(space);
 
-/* f- Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). 
-Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas 
+/* f- Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio).
+Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas
 palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).*/
 
 console.log('excercise-02.f');

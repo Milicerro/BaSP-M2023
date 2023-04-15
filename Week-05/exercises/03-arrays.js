@@ -27,6 +27,7 @@ meses.push('Messi');
 meses.unshift('La Bombonera');
 
 console.log(meses);
+
 //d- Quitar un elemento del principio y del final del array (utilizar shift y pop).
 
 console.log('excercise-03.d');

@@ -4,13 +4,14 @@ console.log('04-if-else');
 mostrar una alerta con el mensaje “Greater than or equal to 0,5” y sino un alerta con el mensaje “Lower than 0,5”.*/
 
 console.log('excercise-04.a');
+
 var myNumber;
 console.log(Math.random())
 
 if (myNumber >= 0,5) {
-    console.log('Greater than or equal to 0,5')
+    // alert('Greater than or equal to 0,5') //DESCOMENTAR
  } else {
-    console.log('Lower than 0,5');
+    alert('Lower than 0,5');
  }
  
 /*b- Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:
@@ -21,6 +22,8 @@ if (myNumber >= 0,5) {
 “Adulto” entre 31 y 60 años;
 “Adulto mayor” entre 61 y 75 años;
 “Anciano” si es mayor a 75 años.*/
+
+console.log('excercise-04.b');
 
 var age = 25;
   if (age < 2) {
@@ -35,6 +38,6 @@ var age = 25;
     console.log('Adulto');
   } else if (age >= 61 && age <= 75) {
     console.log('Adulto Mayor');
-  }else {
+  } else {
     console.log('Anciano');
   }

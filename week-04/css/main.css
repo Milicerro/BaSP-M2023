@@ -78,7 +78,7 @@
 #home h3 {
     color: #E3EC39;
     text-shadow: 2px 3px #000;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-left: 110px;
 }
 
@@ -546,17 +546,18 @@
         width: 100%;
     }
 
-    #home h2 {
+    .container-title-home h2 {
         font-size: 6rem;
-        align-self: center;
-        letter-spacing: 1rem;
+        letter-spacing: .5rem;
+        position: relative;
+        right: 6rem;
+        margin-bottom: 1.5rem;
     }
-
-    #home h3 {
+    .container-title-home h3 {
         font-size: 6rem;
-        align-self: flex-end;
-        letter-spacing: 1rem;
-        margin: 2rem;
+        letter-spacing: .5rem;
+        position: relative;
+        left: 8rem;
     }
 
     #home p {
@@ -571,6 +572,7 @@
         padding-top: 2rem;
         padding-bottom: 2rem;
         margin: 0 auto;
+        opacity: 0.7;
     }
 
     .conteiner-features li {
@@ -587,7 +589,7 @@
     }
 
     #features h4 {
-        text-align: center;
+        padding-top: 1rem;
         font-size: 2rem;
     }
 
@@ -676,6 +678,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+        opacity: 0.7;
     }
 
     .activities-crossfit {
@@ -767,6 +770,7 @@
 
     .conteiner-features {
         height: auto;
+        opacity: 0.7;
     }
 
     #features li {
@@ -790,6 +794,7 @@
         width: 80%;
         height: 300px;
         background-position: center;
+        opacity: 0.7;
     }
 
     #activities li {
@@ -800,12 +805,7 @@
     }
 
     #memberships h3 {
-        font-size: 4rem;
-        padding-right: 18rem;
-    }
-
-    #memberships h4 {
-        font-size: 4rem;
+        padding-right: 14rem;
     }
 
     #memberships li {

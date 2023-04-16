@@ -18,7 +18,7 @@ console.log('excercise-05.b');
 
 for (var i = 0; i < myDinner.length; i++) {
     var x = myDinner[i];
-    console.log(x[0].toUpperCase() + x.substring(1));
+    alert(x[0].toUpperCase() + x.substring(1));
 }
 
 /*c- Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for

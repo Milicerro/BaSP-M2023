@@ -117,7 +117,6 @@
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   #footer {
     height: auto;
-    background-color: #C4C4C4;
     padding: 2rem 0 0 0;
     margin-top: 194px;
   }
@@ -132,21 +131,13 @@
   }
 
   #footer .container-social a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
     width: 37rem;
     color: #000;
     font-size: 1.3rem;
+    padding-right: 1rem;
   }
 
   #footer .container-social img {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-self: center;
     height: 35px;
     width: 35px;
     margin: auto;

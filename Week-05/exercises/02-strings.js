@@ -35,11 +35,12 @@ en mayúscula y las demás en minúscula. Guardar el resultado en una nueva vari
 
 console.log('excercise-02.d');
 
-var messi = 'is the goat';
+var messi = 'is the goAT';
 var messi10 = messi.substring(1,0);
 var theGoat = messi.substring(1,11);
 
-console.log(messi10.toUpperCase() + theGoat.toLowerCase());
+var theResult = messi10.toUpperCase() + theGoat.toLowerCase();
+console.log(theResult);
 
 /* e- Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco.
 Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf)*/
@@ -57,10 +58,11 @@ palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, subs
 
 console.log('excercise-02.f');
 
-var animal = 'hipopotamo velocista';
-var elAnimal = animal.substring(0,1);
-var superVeloz = animal.substring(10,12);
-var elAnimalVeloz = animal.substring(1,10);
-var elAnimalSuperVeloz = animal.substring(12,20);
+var animal = 'hipopotaMO velocIsta';
+var theAnimal = animal.substring(0,1);
+var superFast = animal.substring(10,12);
+var theAnimalFast = animal.substring(1,10);
+var theAnimalSuperFast = animal.substring(12,20);
 
-console.log(elAnimal.toUpperCase()+ elAnimalVeloz.toLowerCase() + superVeloz.toUpperCase() + elAnimalSuperVeloz.toLowerCase());
+var result = theAnimal.toUpperCase()+ theAnimalFast.toLowerCase() + superFast.toUpperCase() + theAnimalSuperFast.toLowerCase();
+console.log(result);

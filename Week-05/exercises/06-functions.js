@@ -28,7 +28,7 @@ function suma(num1, num2) {
     return num1 + num2;
 }
 
-var resultado = suma(5,'hola');
+var resultado = suma(5,'hi');
 console.log(resultado);
 
 /*c- Crear una función “validateInteger” que reciba un número como parámetro y devuelva verdadero
@@ -52,50 +52,32 @@ En caso que haya decimales mostrar un alert con el error y retornar el número c
 
 console.log('excercise-06.d');
 
-function numeros(num1, num2) {
-    if (validateInteger(num1) == false) {
+function numbers(num1, num2) {
+    if (num1 == Math.round(num1) !=0 || num2 == Math.round(num2) !=0) {
+        alert('NaN');
+    } else if (validateInteger(num1) == false) {
+        alert('¡Error!');
+    } else if (validateInteger(num2) == false) {
         alert('¡Error!');
     }
-    if (validateInteger(num2) == false) {
-        alert('¡Error!');
-    }
-    if (isNaN(num1)) {
-        alert('NaN');
-    } else if (isNaN(num2)) {
-        alert('NaN');
-    }
-    return num1 + num2;
+    return Math.round(num1) + Math.round(num2);
 }
 
-var resultado = numeros(5, 1.2);
+var resultado = numbers(5, 1.2);
 console.log(resultado);
-
-
 
 /*e- Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de una nueva
 función probando que todo siga funcionando igual que en el apartado anterior.*/
 
 console.log('excercise-06.e');
 
-function validacion(num1, num2) {
-    if (validateInteger(num1)) {
-        return false;
-    } else if (validateInteger(num2)) {
-        return false;
-    }
+function validacion() {
+    return numbers;
 }
 
 function otherFunction(a, b) {
-    if (validateInteger(a) == false) {
-        alert('¡Error!');
-    } else if (validateInteger(b) == false) {
-        alert('¡Error!');
-    } else if (isNaN(a)) {
-        alert('NaN');
-    } else if (isNaN(b)) {
-        alert('NaN');
-    }
-    return a + b;
+   numbers (a + b);
+   return Math.round (a + b);
 }
 
 var resultado = otherFunction(1, 1.1);

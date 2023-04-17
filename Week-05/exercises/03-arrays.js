@@ -5,59 +5,58 @@ console.log('03-arrays');
 
 console.log('excercise-03.a');
 
-var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
+var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
 'Noviembre', 'Diciembre'];
 
-console.log(meses[4]);
-console.log(meses[10]);
+console.log(months[4] + ' ' + months[10]);
 
 //b- Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
 
 console.log('excercise-03.b');
 
-meses.sort();
+months.sort();
 
-console.log(meses);
+console.log(months);
 
 //c- Agregar un elemento al principio y al final del array (utilizar unshift y push).
 
 console.log('excercise-03.c');
 
-meses.push('Messi');
-meses.unshift('La Bombonera');
+months.push('Messi');
+months.unshift('La Bombonera');
 
-console.log(meses);
+console.log(months);
 
 //d- Quitar un elemento del principio y del final del array (utilizar shift y pop).
 
 console.log('excercise-03.d');
 
-meses.pop();
-meses.shift();
+months.pop();
+months.shift();
 
-console.log(meses);
+console.log(months);
 
 //e- Invertir el orden del array (utilizar reverse).
 
 console.log('excercise-03.e');
 
-meses.reverse();
+months.reverse();
 
-console.log(meses);
+console.log(months);
 
 //f- Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
 
 console.log('excercise-03.f');
 
-console.log(meses.join('-'));
+console.log(months.join('-'));
 
 //g- Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).
 
 console.log('excercise-03.g');
 
-var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
+var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
 'Noviembre', 'Diciembre'];
 
-var menosMeses = meses.slice(4,11);
+var lessMonths = months.slice(4,11);
 
-console.log(menosMeses);
+console.log(lessMonths);

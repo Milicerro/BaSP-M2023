@@ -27,17 +27,17 @@ console.log('excercise-04.b');
 
 var age = 25;
   if (age < 2) {
-    console.log('Bebe');
+    alert('Bebe');
   } else if (age >= 2 && age <= 12) {
-    console.log('Niño');
+    alert('Niño');
   } else if (age >= 13 && age <= 19) {
-    console.log('Adolecente');
+    alert('Adolecente');
   } else if (age >= 20 && age <= 30) {
-    console.log('Joven');
+    alert('Joven');
   } else if (age >= 31 && age <= 60) {
-    console.log('Adulto');
+    alert('Adulto');
   } else if (age >= 61 && age <= 75) {
-    console.log('Adulto Mayor');
+    alert('Adulto Mayor');
   } else {
-    console.log('Anciano');
+    alert('Anciano');
 }

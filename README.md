@@ -29,12 +29,18 @@ Also, in that week, we included the mobile and the tablet design. That was for t
 If you want to see what I was working on in Week-04, click on the blue link!! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/week-04/index.html)
 
 ## Week 05
-In this fifth week, we have to work with JavaScript. During the week, we develop exercises using this programming language.
+In the fifth week, we have to work with JavaScript. During the week, we develop exercises using this programming language.
 Just to comment, this particular week is just for practicing and getting to know the language.
 
 ## 🔗 Link Week-05
 If you want to see what I'm working on this Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-05/index.html)
 
+## Week 06
+In this sixth week, we had to use the languages learned in the last weeks, to make the corresponding design for the login and registration page.
+The languages we use this week: ECMAScript5, html and css
+
+## 🔗 Link Week-06
+If you want to see what I'm working on this Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-06/)
 
 ## Color Reference of the layouts
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="resetsheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <title>Log-in</title>
+        <link rel="shortcut-icon" href="../Assets/Images/radiumrocket.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="container-header">
+            <nav class="navbar-default">
+                <div class="navbar-default-main">
+                    <img src="../../Assets/Images/radiumrocket.png" alt="Logo RadiumRocket">
+                    <h1>Mega Rocket S.A</h1>
+                </div>
+                <div class="buttoms">
+                    <div class="header-buttom">
+                        <a href="sign-up.html">Sing up<img src="../../Assets/Images/signup-icon.png" alt="Sign up"></a>
+                    </div>
+                    <div class="header-buttom">
+                        <a href="index.html">Home<img src="../../Assets/Images/radiumrocket.png" alt="Home"></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-sandwich">
+                <a href="../views/index.html"><img src="../../Assets/Images/Untitled.png" alt="Home"></a>
+            </div>
+        </header>
+        <main>
+            <form action="#" id="form">
+                <h1> Log in</h1>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" placeholder="example@gmail.com" id="email">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="text" placeholder="password" id="password">
+                        <p class="error"></p>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p>New to MegaRocketGYM? <a href="sign-up.html">Create an account.</a></p>
+            </form>
+        </main>
+        <script src="../js/login.js"></script>
+    </body>
+</html>

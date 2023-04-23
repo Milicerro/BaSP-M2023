@@ -1,0 +1,86 @@
+#form {
+    border: 0 #32323200;
+    background-color: #E3EC39;
+    opacity: 85%;
+    width: 80%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 5rem auto auto auto;
+    gap: 2rem;
+    max-width: 600px;
+}
+
+#form h1 {
+    font-size: 1.3rem;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+#form input {
+    width: 250px;
+    height: 30px;
+    padding: 1px 3px;
+    display: flex;
+    align-self: flex-start;
+    border: 1.5px solid #373867;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #373867;
+}
+
+#form button {
+    Width: 80px;
+    height: 2rem;
+    background-color: #373867;
+    border: none;
+    border-radius: 7px;
+    color: #E3EC39;
+}
+ #form p {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+ }
+ #form p a {
+    color: #394b98;
+ }
+
+.error  {
+    color: #ff1a01de;
+    display: block;
+    text-align: center;
+}
+.invalid {
+    border: solid 1px #ff1a01de;
+    box-shadow: 0 1px 4px #ff1a01de;
+}
+
+.valid {
+    border: solid 1px #98fd39;
+    box-shadow: 0 1px 6px #98fd39;
+}
+
+@media screen and (min-width: 1025px) {
+    .header-sandwich {
+        display: none;
+    }
+
+    body {
+        background-image: url("../../Assets/Images/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #form {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #form {
+        max-width: 567px;
+    }
+}

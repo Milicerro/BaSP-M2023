@@ -1,0 +1,912 @@
+.main-aside {
+    display: none;
+}
+
+.conteiner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-aside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.container-first-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+}
+
+.container-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-aside li {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color: #000;
+    padding: 8px 16px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.img-aside img {
+    height: 20px;
+    width: 20px;
+}
+
+.main-aside p {
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#home {
+    width: 100%;
+    height: 60rem;
+    text-align: center;
+    background-image: url("../../Assets/Images/inicio-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home h2 {
+    color: #fff;
+    text-shadow: 2px 3px #000;
+    padding-top: 70px;
+    padding-right: 75px;
+}
+
+#home h3 {
+    color: #E3EC39;
+    text-shadow: 2px 3px #000;
+    padding-right: 40px;
+    padding-left: 110px;
+}
+
+#home p {
+    font-size: 20px;
+    padding-top: 80px;
+    color: #ffffff;
+    text-shadow: 1px 2px #000;
+}
+
+.secondary-title {
+    font-size: 2rem;
+}
+
+#features .conteiner-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#features h2 {
+    display: flex;
+    color: #fff;
+    padding-top: 90px;
+    padding-right: 83px;
+}
+
+#features h3 {
+    display: flex;
+    color: #D5DD3C;
+    padding-left: 190px
+}
+
+#features h4 {
+    font-size: 1.7rem;
+    color: #E3EC39;
+    text-shadow: 0px 5px 10px #000;
+}
+
+#features p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 35px;
+    text-shadow: 0px 5px 8px #000;
+}
+
+.conteiner-features {
+    width: 90%;
+}
+
+.conteiner-features li {
+    filter: drop-shadow(1px 2px 5px #000);
+    height: 160px;
+    width: 90%;
+    padding-top: 90px;
+    border-radius: 30px;
+    margin: 50px -8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#features li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.features-cards-reservation {
+    background-image: url("../../Assets/Images/reservation.png");
+}
+
+.features-cards-schedule {
+    background-image: url("../../Assets/Images/landing-schedule-background.jpg");
+}
+
+.features-cards-memberships {
+    background-image: url("../../Assets/Images/membership.png");
+}
+
+.features-cards-contact {
+    background-image: url("../../Assets/Images/contacto.jpg");
+}
+
+#contact-us .secondary-title {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-us form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+#contact-us h3 {
+    padding-right: 45px;
+    color: #fff;
+}
+
+#contact-us h4 {
+    color: #D5DD3C;
+    padding-left: 247px;
+}
+
+.form-contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 30px;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.form-contact-us input, select {
+    width: 250px;
+    height: 30px;
+    padding: 1px 3px;
+    display: flex;
+    align-self: flex-start;
+    border: 1.5px solid #373867;
+    border-radius: 4px;
+    background-color: #d4cdcd;
+    color: #323232;
+}
+
+#contact-us form button {
+    Width: 80px;
+    height: 42px;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: #E3EC39;
+    border: none;
+    border-radius: 7px;
+}
+
+.contact-us-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us-divs textarea {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    padding: 3px 25px;;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+    border: solid #00000000;
+    background-color: #d4cdcd;
+    color: #323232;
+}
+
+.form-contact-us label {
+    font-size: 18px;
+    line-height: 1;
+    color: #000;
+}
+
+.contact-us-divs label {
+    font-size: 18px;
+    line-height: 1;
+    color: #000;
+    margin: 1rem;
+}
+
+#activities .secondary-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#activities ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#activities li {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 5px 5px #000;
+    background-color: #0f0f0f8c;
+    border-radius: 102px;
+}
+
+#activities h3 {
+    display: flex;
+    padding-right: 60px;
+    color: #fff;
+}
+
+#activities h4 {
+    display: flex;
+    color: #D5DD3C;
+    padding-left: 211px;
+}
+
+.activities-crossfit {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/crossfit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+
+.activities-box {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/box.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+
+.activities-funtional {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/funtional.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+
+.activities-spinning {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/spinning.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+
+.activities-fitness {
+    text-decoration: none;
+    background-image: url("../../Assets/Images/fitness.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px);
+    height: 179px;
+    width: 350px;
+    padding-top: 99px;
+    border-radius: 30px;
+    margin: 40px 0px;
+}
+
+#memberships {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#memberships .secondary-title {
+    margin-top: auto;
+}
+
+#memberships h3 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 80px;
+}
+
+#memberships h4 {
+    color: #D5DD3C;
+    padding-left: 180px;
+}
+
+#memberships li {
+    color: #E3EC39;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 5px 5px #000;
+    padding: 2rem 0;
+}
+
+#memberships p {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    text-shadow: 0px 1px 5px #000;
+    margin-top: 27px;
+}
+
+.member-only-classes {
+    width: 90%;
+    height: 27rem;
+    margin: 2rem auto;
+    text-decoration: none;
+    background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/classesonly.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 5px);
+    border-radius: 30px;
+}
+
+.member-classic {
+    width: 90%;
+    height: 27rem;
+    margin: 2rem auto;
+    text-decoration: none;
+    background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/classicmembership.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0px 4px 6px);
+    border-radius: 30px;
+}
+
+.member-black{
+    width: 90%;
+    height: 27rem;
+    margin: 2rem auto;
+    text-decoration: none;
+    background-image: linear-gradient(#00000080, #00000080), url("../../Assets/Images/blackmembership.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(0px 4px 6px);
+    border-radius: 30px;
+}
+
+#our-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#our-story h3 {
+    padding-right: 9rem;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 60px;
+    line-height: 100px;
+    text-shadow: 2px 3px#000;
+}
+
+#our-story h4 {
+    color: #D5DD3C;
+    padding-left: 146px;
+    font-size: 60px;
+    line-height: 10px;
+    text-shadow: 2px 3px#000;
+}
+
+#our-story .our-story-text {
+    background-color: #E0E0E0;
+    opacity: 90%;
+    border-radius: 12px;
+    width: 320px;
+    padding: 29px 26px;
+    margin: 50px 10px 0 10px;
+}
+
+#our-story p {
+    text-align: center;
+    text-align-last: center;
+    color: #404040;
+}
+
+@media screen and (min-width: 1025px) {
+    .conteiner-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    .main-aside {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        background-color: #D5DD3C;
+        color: #000000;
+        opacity: 90%; 
+        padding-bottom: 5rem;
+    }
+
+    .main-aside .container-aside {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        margin-left: 2.5rem;
+        gap: 10rem;
+    }
+
+    .container-direccion-numero {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .img-aside {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .container-aside ul {
+        text-align: center;
+    }
+
+   #home {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../Assets/Images/inicio.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50rem;
+    }
+
+    .container-title-home h2 {
+        font-size: 6rem;
+        letter-spacing: .5rem;
+        position: relative;
+        right: 6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container-title-home h3 {
+        font-size: 6rem;
+        letter-spacing: .5rem;
+        position: relative;
+        left: 8rem;
+    }
+
+    #home p {
+        font-size: 1.7rem;
+        padding-top: 1.5rem;
+    }
+
+    #features .conteiner-features {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin: 0 auto;
+        opacity: 0.7;
+    }
+
+    .conteiner-features li {
+        width: 450px;
+        height: 225px;
+    }
+
+    #features h2, h3 {
+        font-size: 5.5rem;
+    }
+
+    #features h3 {
+        padding-left: 20rem;
+    }
+
+    #features h4 {
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .container-first-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 80%;
+    }
+
+    #contact-us h4 {
+        font-size: 5rem;
+        padding-left: 27rem;
+    }
+
+    #contact-us form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 2rem auto;
+        border-radius: 30px;
+    }
+
+    .form-contact-us {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .form-contact-us input, select {
+        width: 222px;
+        height: 48px;
+        padding: 1px 3px;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    #contact-us form button {
+        Width: 80px;
+        height: 42px;
+        margin: auto;
+        margin-bottom: 1rem
+    }
+
+    .form-contact-us label {
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    .contact-us-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem .5rem;
+    }
+
+    .contact-us-divs textarea {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 3px 25px;;
+    }
+
+    .contact-us-divs label {
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+        margin: 1rem 1.5rem;
+    }
+
+    #activities h4 {
+        font-size: 5rem;
+        padding-left: 27rem;
+    }
+
+    #activities ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 0.7;
+    }
+
+    .activities-crossfit {
+        margin-left: 10rem;
+    }
+
+    #memberships h4 {
+        font-size: 4.5rem;
+        padding-left: 31rem;
+    }
+
+    #memberships li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3.5rem;
+    }
+
+    #memberships p {
+        margin: 3rem .5rem;
+    }
+
+    .member-only-classes {
+        width: 100%;
+        height: 27rem;
+        margin: 2rem auto;
+    }
+
+    .member-black {
+        width: 100%;
+        height: 29rem;
+        margin: 2rem auto;
+    }
+
+    .member-classic {
+        width: 100%;
+        height: 29rem;
+        margin: 2rem auto;
+    }
+
+    #our-story {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    #our-story .our-story-text {
+        width: 31rem;
+        margin: 127px 0px 0 17px;
+        padding: 45px 64px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .main-aside {
+        display: none;
+    }
+
+    #home {
+        height: 65rem;
+        text-align: center;
+    }
+
+    #home h3 {
+        padding-left: 110px;
+    }
+
+    #home p {
+        font-size: 1.5rem;
+        padding-top: 80px;
+    }
+
+    .secondary-title {
+        font-size: 2rem;
+    }
+
+    #features .conteiner-features {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .conteiner-features {
+        height: auto;
+        opacity: 0.7;
+    }
+
+    #features li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    #activities ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .activities-crossfit, .activities-box, .activities-funtional, .activities-spinning, .activities-fitness {
+        width: 80%;
+        height: 300px;
+        opacity: 0.7;
+    }
+
+    #activities li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    #memberships h3 {
+        padding-right: 14rem;
+    }
+
+    #memberships li {
+        padding: 2rem 0;
+    }
+
+    .member-only-classes {
+        width: 100%;
+        height: 30rem;
+        margin: 2rem auto;
+    }
+
+    .member-black {
+        width: 100%;
+        height: 30rem;
+        margin: 2rem auto;
+    }
+
+    .member-classic {
+        width: 100%;
+        height: 30rem;
+        margin: 2rem auto;
+    }
+
+    #contact-us form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: 90%;
+        margin: 2rem auto;
+        border-radius: 30px;
+    }
+
+    .form-contact-us {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .form-contact-us input, select {
+        width: 220px;
+        height: 40px;
+        padding: 1px 3px;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    #contact-us form button {
+        Width: 80px;
+        height: 42px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .form-contact-us label {
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    .contact-us-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us-divs textarea {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 3px 25px;;
+    }
+
+    .contact-us-divs label {
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+        margin: 1rem 1.5rem;
+    }
+
+    #our-story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #our-story .our-story-text {
+        width: 80%;
+        margin: 62px 0px 0 6px;
+        padding: 69px 26px;
+    }
+
+    #our-story h3 {
+        padding-right: 9rem;
+    }
+}

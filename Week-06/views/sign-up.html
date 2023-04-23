@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="resetsheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/sing-up.css">
+        <link rel="shortcut icon" href="../Assets/Images/radiumrocket.png">
+        <title>Sing-up</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="container-header">
+            <nav class="navbar-default">
+                <div class="navbar-default-main">
+                    <img src="../../Assets/Images/radiumrocket.png" alt="Logo RadiumRocket">
+                    <h1>Mega Rocket S.A</h1>
+                </div>
+                <div class="buttoms">
+                    <div class="header-buttom">
+                        <a href="login.html">Login<img src="../../Assets/Images/login-icon.png" alt="Log In"></a>
+                    </div>
+                    <div class="header-buttom">
+                        <a href="index.html">Home<img src="../../Assets/Images/radiumrocket.png" alt="Home"></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-sandwich">
+                <a href="../views/index.html"><img src="../../Assets/Images/Untitled.png" alt="Home"></a>
+            </div>
+        </header>
+        <main>
+            <form action="#" id="form">
+                <h1> Register</h1>
+                <div class="container-inputs">
+                    <div>
+                        <label>Your name</label>
+                        <input type="text" placeholder="Your name" id="name">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Your last name</label>
+                        <input type="text" placeholder="Your last name" id="lastname">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>ID card</label>
+                        <input type="text" placeholder="ID card" id="idCard">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Date of birth</label>
+                        <input type="text" placeholder="MM/DD/YY" id="date">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Phone number</label>
+                        <input type="text" placeholder="phone number" id="number">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" placeholder="Your address" id="address">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Locality</label>
+                        <input type="text" placeholder="Your locality" id="locality">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Zip code</label>
+                        <input type="text" placeholder="Your zip code" id="zip-code">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" placeholder="Email" id="mail">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="text" placeholder="********" id="pass">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <label>Repeat password</label>
+                        <input type="text" placeholder="********" id="repeatpass">
+                        <p class="error"></p>
+                    </div>
+                </div>
+                <div>
+                    <button  id="form-buttom" type="submit">Register</button>
+                </div>
+                <p> Already have an account? <a href="login.html"> Sign in</a></p>
+            </form>
+        </main>
+        <script src="../js/sign-up.js"></script>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0 #32323200;
+    background-color: #e7e7e6f3;
+    opacity: 85%;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin: 2rem auto;
+    max-width: 300px;
+}
+
+.container-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#form h1 {
+    display: flex;
+    align-content: center;
+    font-size: 2rem;
+    align-self: center;
+    margin: 1rem 2rem;
+    color: #e3ec39;
+    text-shadow: 1px 2px 2px#020202;
+}
+
+#form input {
+    width: 180px;
+    height: 40px;
+    padding: 1px 3px;
+    display: flex;
+    align-self: flex-start;
+    border: 1.5px solid #373867;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #373867;
+}
+
+#form button {
+    Width: 80px;
+    height: 2rem;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    background-color: #E3EC39;
+    border: 1px solid #cfd733;
+    border-radius: 7px;
+    color: #373867;
+    text-shadow: 0 .5px 1px#020202;
+}
+
+#form p {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+ }
+
+ #form p a {
+    color: #394b98;
+ }
+
+ .error  {
+    color: #ff1a01de;
+    display: block;
+    text-align: center;
+}
+.invalid {
+    border: solid 1px #ff1a01de;
+    box-shadow: 0 1px 4px #ff1a01de;
+}
+
+.valid {
+    border: solid 1px #98fd39;
+    box-shadow: 0 1px 6px #98fd39;
+}
+
+@media screen and (min-width: 1025px) {
+    .header-sandwich {
+        display: none;
+    }
+    body {
+        background-image: url("../../Assets/Images/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #form {
+        max-width: 850px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    #form input {
+        width: 300px;
+        height: 40px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 5rem 2rem;
+    }
+}

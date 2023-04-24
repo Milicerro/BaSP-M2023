@@ -215,8 +215,8 @@ rePass.onfocus = function(event) {
 var submitButton = document.querySelector("#form-buttom");
 submitButton.onclick = function(event) {
   event.preventDefault();
+  // alert(signUpButton.onsubmit);
 }
-
 
 function hasNumbers(myString) {
     var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
@@ -297,4 +297,71 @@ function dateOk(date) {
     return false;
   }
   return true;
+}
+
+function signUpButton(event) {
+  event.preventDefault();
+  var nameInput = hasOnlyLetters(nameInput.value);
+  var lastNameInput = hasOnlyLetters(lastNameInput.value);
+  var idInput = hasOnlyNumbers(idCardInput.value);
+  var BirthDayInput = dateOk(dateInput.value);
+  var phoneInput = hasOnlyNumbers(numberInput.value);
+  var addressInput = addressOk(addressInput.value);
+  var locationInput = hasOnlyLetters(localityInput.value);
+  var zipInput = hasOnlyNumbers(zipCodeInput.value);
+  var emailInput = emailExpression(mailInput.value);
+  var passInput = hasNumbersAndChar(passInput.value);
+  var repeatPassInput = hasNumbersAndChar(repeatpassInput.value);
+  if(!nameInput){
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!lastNameInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!idInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!BirthDayInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!phoneInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!addressInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!locationInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!zipInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!emailInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!passInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!repeatPassInput) {
+    rePass.classList.add("invalid");
+    rePass.classList.remove("valid");
+  }
+  if(!nameInput || !lastNameInput || !idInput || !BirthDayInput || !phoneInput || !addressInput ||
+    !locationInput || !zipInput || !emailField || !passInput || !repeatPassInput) {
+      alert("Verify that the data entered is correct");
+    }else {
+      alert("Name: "+ nameInput.valueOf + "Lastname: " + lastNameInput.valueOf + "ID: " + idCardInput.value +
+      "Birthday " + dateInput.value + "Phone Number: " + numberInput.value + "Address: " + addressInput.valueOf +
+      + "Locality: " + localityInput.value + "Zip-Code: " + zip-codeInput.value + "Email: " + mailInput.value + "Password: " + passInput.valueOf);
+    }
 }

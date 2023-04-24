@@ -40,7 +40,7 @@ In this sixth week, we had to use the languages learned in the last weeks, to ma
 The languages we use this week: ECMAScript5, html and css
 
 ## 🔗 Link Week-06
-If you want to see what I'm working on this Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-06/)
+If you want to see what I'm working on this Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-06/views)
 
 ## Color Reference of the layouts
 

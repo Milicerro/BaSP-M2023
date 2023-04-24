@@ -42,6 +42,46 @@ pass.onfocus = function(event) {
 var submitButton = document.querySelector("#form-buttom");
 submitButton.onclick = function(event) {
   event.preventDefault();
+  var email = document.getElementById("email");
+  var emailValue = email.value;
+  var pass = document.getElementById("password");
+  var passValue = pass.value;
+
+if (!emailOk(emailValue) || !passOk(passValue)) {
+  alert(validateAllInformation(emailValue, passValue))
+} else {
+  alert('login successfully')
+}
+}
+
+function validateAllInformation(email, password){
+  var array = [];
+  if(!emailOk(email)){
+      array.push('The field Email is wrong ');
+  }
+  if(!passOk(password)){
+      array.push('\nThe field Password is wrong ');
+  }
+
+  return array;
+}
+
+
+function emailOk(emailValue) {
+  var emailExpression= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  if(emailExpression.test(emailValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function passOk(passValue) {
+  if(passValue.length > 7 && hasNumbersAndChar(passValue)) {
+    return true;
+  }else {
+    return false;
+  }
 }
 
 function hasNumbers(myString) {
@@ -55,11 +95,11 @@ function hasNumbers(myString) {
   return false;
 }
 
-function hasNumbersAndChar(myString) {
+function hasNumbersAndChar(passValue) {
   var num = 0;
   var char = 0;
-  for (var x = 0; x < myString.length; x++) {
-    if (hasNumbers(myString[x])) {
+  for (var x = 0; x < passValue.length; x++) {
+    if (hasNumbers(passValue[x])) {
       num++;
     }else {
       char++;

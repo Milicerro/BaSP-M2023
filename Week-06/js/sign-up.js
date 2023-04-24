@@ -76,7 +76,7 @@ date.onfocus = function(event) {
 
 var phone = document.querySelector("#number");
 phone.onblur = function(event) {
-  if ((event.target.value.length === 10 && hasOnlyNumbers(event.target.value)) ) {
+  if (event.target.value.length === 10 && hasOnlyNumbers(event.target.value)) {
     phone.classList.remove("invalid");
     phone.classList.add("valid");
     phone.nextElementSibling.innerText = ""
@@ -114,7 +114,7 @@ address.onfocus = function(event) {
 
 var local = document.querySelector("#locality");
 local.onblur = function(event) {
-  if ((event.target.value.length > 3 && hasOnlyLetters(event.target.value)) ) {
+  if ((event.target.value.length > 3 && hasOnlyLetters(event.target.value))) {
     local.classList.remove("invalid");
     local.classList.add("valid");
     local.nextElementSibling.innerText = ""
@@ -133,7 +133,8 @@ local.onfocus = function(event) {
 
 var zip = document.querySelector("#zip-code");
 zip.onblur = function(event) {
-  if ((event.target.value.length >= 4 && event.target.value.length <= 5 && hasOnlyNumbers(event.target.value)) ) {
+  if ((event.target.value.length >= 4 && event.target.value.length <= 5
+    && hasOnlyNumbers(event.target.value)) ) {
     zip.classList.remove("invalid");
     zip.classList.add("valid");
     zip.nextElementSibling.innerText = ""
@@ -209,13 +210,183 @@ rePass.onblur = function(event) {
 rePass.onfocus = function(event) {
   rePass.classList.remove("invalid");
   rePass.classList.remove("valid");
-  rePass.nextElementSibling.innerText = ""
+  rePass.nextElementSibling.innerText = "";
 }
 
 var submitButton = document.querySelector("#form-buttom");
 submitButton.onclick = function(event) {
   event.preventDefault();
-  // alert(signUpButton.onsubmit);
+  var name = document.getElementById("name");
+  var nameValue = name.value;
+
+  var lastname = document.getElementById("lastname");
+  var lastNameValue = lastname.value;
+
+  var id = document.getElementById("idCard");
+  var idValue = id.value;
+
+  var date = document.getElementById("date");
+  var dateValue = date.value;
+
+  var phone = document.getElementById("number");
+  var phoneValue = phone.value;
+
+  var address = document.getElementById("address");
+  var addressValue = address.value;
+
+  var locality = document.getElementById("locality");
+  var localityValue = locality.value;
+
+  var zip = document.getElementById("zip-code");
+  var zipValue = zip.value;
+
+  var mail = document.getElementById("mail");
+  var mailValue = mail.value;
+
+  var pass = document.getElementById("pass");
+  var passValue = pass.value;
+
+  var rePass = document.getElementById("repeatpass");
+  var repeatpassValue = rePass.value;
+
+  if (!nameOk(nameValue) || !lasNameOk(lastNameValue) || !idOk(idValue) || !dateIsOk(dateValue) ||
+   !phoneOk(phoneValue) || !addressIsOk(addressValue) || !localityOk(localityValue) ||
+   !zipCodeOk(zipValue) || !emailOk(mailValue) || !passOk(passValue) || !rePassOk(repeatpassValue)) {
+    alert(validateAllInformation(nameValue, lastNameValue, idValue, dateValue,
+      phoneValue, addressValue, localityValue, zipValue, mailValue, passValue, repeatpassValue))
+  } else {
+    alert('Register successfully')
+  }
+}
+
+function validateAllInformation(name, lastname, id, date, phone, address,
+   locality, zip, mail, pass, repeatpass){
+  var array = [];
+  if(!nameOk(name)){
+    array.push('The field Name is wrong ');
+  }
+  if(!lasNameOk(lastname)){
+    array.push('\nThe field Last name is wrong ');
+  }
+  if(!idOk(id)){
+    array.push('\nThe field ID card is wrong ');
+  }
+  if(!dateIsOk(date)){
+    array.push('\nThe field Date of Birth is wrong ');
+  }
+  if(!phoneOk(phone)){
+    array.push('\nThe field Phone number is wrong ');
+  }
+  if(!addressIsOk(address)){
+    array.push('\nThe field Address is wrong ');
+  }
+  if(!localityOk(locality)){
+    array.push('\nThe field Locality is wrong ');
+  }
+  if(!zipCodeOk(zip)){
+    array.push('\nThe field Zip Code is wrong ');
+  }
+  if(!emailOk(mail)){
+      array.push('\nThe field Email is wrong ');
+  }
+  if(!passOk(pass)){
+      array.push('\nThe field Password is wrong ');
+  }
+  if(!rePassOk(repeatpass)){
+    array.push('\nThe field Repeat password is wrong ');
+  }
+
+  return array;
+}
+
+function nameOk(nameValue) {
+  if(nameValue.length > 3 && hasOnlyLetters(nameValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function lasNameOk(lastNameValue) {
+  if(lastNameValue.length > 3 && hasOnlyLetters(lastNameValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function idOk(idValue) {
+  if(idValue.length > 7 && hasOnlyNumbers(idValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function dateIsOk(dateValue) {
+  if(dateOk(dateValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function phoneOk(phoneValue) {
+  if((phoneValue.length === 10 && hasOnlyNumbers(phoneValue))) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function addressIsOk(addressValue) {
+  if(addressOk(addressValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function localityOk(localityValue) {
+  if(localityValue.length > 3 && hasOnlyLetters(localityValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function zipCodeOk(zipValue) {
+  if(zipValue.length >= 4 && zipValue.length <= 5
+    && hasOnlyNumbers(zipValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function emailOk(mailValue) {
+  var emailExpression= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  if(emailExpression.test(mailValue)) {
+    return true;
+  }else {
+    return false
+  }
+}
+
+function passOk(passValue) {
+  if(passValue.length > 7 && hasNumbersAndChar(passValue)) {
+    return true;
+  }else {
+    return false;
+  }
+}
+
+function rePassOk(repeatpassValue) {
+  if(repeatpassValue.length > 7 && hasNumbersAndChar(repeatpassValue)) {
+    return true;
+  }else {
+    return false;
+  }
 }
 
 function hasNumbers(myString) {
@@ -297,71 +468,4 @@ function dateOk(date) {
     return false;
   }
   return true;
-}
-
-function signUpButton(event) {
-  event.preventDefault();
-  var nameInput = hasOnlyLetters(nameInput.value);
-  var lastNameInput = hasOnlyLetters(lastNameInput.value);
-  var idInput = hasOnlyNumbers(idCardInput.value);
-  var BirthDayInput = dateOk(dateInput.value);
-  var phoneInput = hasOnlyNumbers(numberInput.value);
-  var addressInput = addressOk(addressInput.value);
-  var locationInput = hasOnlyLetters(localityInput.value);
-  var zipInput = hasOnlyNumbers(zipCodeInput.value);
-  var emailInput = emailExpression(mailInput.value);
-  var passInput = hasNumbersAndChar(passInput.value);
-  var repeatPassInput = hasNumbersAndChar(repeatpassInput.value);
-  if(!nameInput){
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!lastNameInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!idInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!BirthDayInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!phoneInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!addressInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!locationInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!zipInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!emailInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!passInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!repeatPassInput) {
-    rePass.classList.add("invalid");
-    rePass.classList.remove("valid");
-  }
-  if(!nameInput || !lastNameInput || !idInput || !BirthDayInput || !phoneInput || !addressInput ||
-    !locationInput || !zipInput || !emailField || !passInput || !repeatPassInput) {
-      alert("Verify that the data entered is correct");
-    }else {
-      alert("Name: "+ nameInput.valueOf + "Lastname: " + lastNameInput.valueOf + "ID: " + idCardInput.value +
-      "Birthday " + dateInput.value + "Phone Number: " + numberInput.value + "Address: " + addressInput.valueOf +
-      + "Locality: " + localityInput.value + "Zip-Code: " + zip-codeInput.value + "Email: " + mailInput.value + "Password: " + passInput.valueOf);
-    }
 }

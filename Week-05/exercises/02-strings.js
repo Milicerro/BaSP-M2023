@@ -25,7 +25,7 @@ con los últimos 3 caracteres guardando el resultado en una nueva variable (util
 console.log('excercise-02.c');
 
 var duck = 'says ¡CUAK!';
-var cuak = duck.substring(8,11);
+var cuak = duck.substring(duck.length-3);
 
 console.log(cuak);
 
@@ -36,8 +36,8 @@ en mayúscula y las demás en minúscula. Guardar el resultado en una nueva vari
 console.log('excercise-02.d');
 
 var messi = 'is the goAT';
-var messi10 = messi.substring(1,0);
-var theGoat = messi.substring(1,11);
+var messi10 = messi.substring(messi.length-0);
+var theGoat = messi.substring(messi.length-11);
 
 var theResult = messi10.toUpperCase() + theGoat.toLowerCase();
 console.log(theResult);

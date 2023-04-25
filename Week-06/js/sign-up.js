@@ -157,7 +157,7 @@ emailField.onblur = function(event) {
   if (!emailExpression.test(event.target.value)) {
     emailField.classList.add("invalid");
     emailField.classList.remove("valid");
-    emailField.nextElementSibling.innerText = "Your email is wrong"
+    emailField.nextElementSibling.innerText = "email invalid"
   }else {
     emailField.classList.add("valid");
     emailField.classList.remove("invalid");
@@ -182,7 +182,7 @@ var pass = document.querySelector("#pass");
   }else {
     pass.classList.add("invalid");
     pass.classList.remove("valid");
-    pass.nextElementSibling.innerText = "Your password is wrong"
+    pass.nextElementSibling.innerText = "password invalid"
   }
 }
 
@@ -203,7 +203,7 @@ rePass.onblur = function(event) {
   } else {
     rePass.classList.add("invalid");
     rePass.classList.remove("valid");
-    rePass.nextElementSibling.innerText = "Your password is wrong"
+    rePass.nextElementSibling.innerText = "password invalid"
   }
 }
 

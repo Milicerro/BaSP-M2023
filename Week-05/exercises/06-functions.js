@@ -20,12 +20,11 @@ retornar el valor NaN como resultado.*/
 console.log('excercise-06.b');
 
 function suma(num1, num2) {
-    if (isNaN(num1)) {
-        alert('NaN');
-    } else if (isNaN(num2)) {
-        alert('NaN');
+    if (isNaN(num1) || isNaN(num2)) {
+        return NaN;
+    } else {
+        return num1 + num2;
     }
-    return num1 + num2;
 }
 
 var resultado = suma(5,'hi');
@@ -46,18 +45,16 @@ function validateInteger(x) {
 
 console.log(validateInteger(5.1));
 
-/*d- Copiar y renombrar la función suma del ejercicio 6b), agregarle una llamada a la función del ejercicio 6c, 
+/*d- Copiar y renombrar la función suma del ejercicio 6b), agregarle una llamada a la función del ejercicio 6c,
 que valide que los números sean enteros.
 En caso que haya decimales mostrar un alert con el error y retornar el número convertido a entero (redondeado).*/
 
 console.log('excercise-06.d');
 
 function numbers(num1, num2) {
-    if (num1 == Math.round(num1) !=0 || num2 == Math.round(num2) !=0) {
+    if (num1 === Math.round(num1)|| num2 === Math.round(num2)) {
         alert('NaN');
-    } else if (validateInteger(num1) == false) {
-        alert('¡Error!');
-    } else if (validateInteger(num2) == false) {
+    } else if (!validateInteger(num1) || !validateInteger(num2)) {
         alert('¡Error!');
     }
     return Math.round(num1) + Math.round(num2);

@@ -112,31 +112,36 @@
                             <div class="contact-us-divs">
                                 <label>Name</label>
                                 <input type="text" placeholder="Name" id="name">
+                                <p class="error"></p>
                             </div>
                             <div class="contact-us-divs">
                                 <label>Surname</label>
-                                <input type="text" placeholder="Surname">
+                                <input type="text" placeholder="Surname" id="surname">
+                                <p class="error"></p>
                             </div>
                             <div class="contact-us-divs">
                                 <label>Email</label>
-                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Email" id="email">
+                                <p class="error"></p>
                             </div>
                             <div class="contact-us-divs">
                                 <label>Contact Reason</label>
-                                    <select>
-                                        <option value="choose one">Choose one</option>
-                                        <option value="i want to know the memberships and costs">I want to know the memberships and costs</option>
-                                        <option value="i want to make a query or suggestion">I want to make a query or suggestion</option>
-                                        <option value="i want to make a claim">I want to make a claim</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                <select id="choose">
+                                    <option value="">Choose one</option>
+                                    <option value="i want to know the memberships and costs">I want to know the memberships and costs</option>
+                                    <option value="i want to make a query or suggestion">I want to make a query or suggestion</option>
+                                    <option value="i want to make a claim">I want to make a claim</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <p class="error"></p>
                             </div>
                         </div>
                         <div class="contact-us-divs">
                             <label>Message</label>
-                            <textarea name="message">Write here...</textarea>
+                            <textarea id="message" name="message"></textarea>
+                            <p class="error"></p>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button id="textarea-button" type="submit">Submit</button>
                     </form>
                 </section>
                 <section id="activities">
@@ -232,5 +237,6 @@
                 <span>All rights reserved.2023 &copy;</span>
             </div>
         </footer>
+        <script src="../js/contact.js"></script>
     </body>
 </html>

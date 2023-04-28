@@ -501,8 +501,8 @@
 }
 
 .valid {
-    border: solid 1px #98fd39;
-    box-shadow: 0 1px 6px #98fd39;
+    border: solid 1px #98fd3900;
+    box-shadow: 0 1px 6px #98fd3900;
 }
 
 @media screen and (min-width: 1025px) {

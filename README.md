@@ -25,23 +25,24 @@ This project was individual, but I still received help from my teammates.
 In the fourth week, we had to make the landing page responsive. To make that, we had to use the FlexBox CSS to achieve it.
 Also, in that week, we included the mobile and the tablet design. That was for the responsive part came. We had to start editing the initial HTML code of the Week-02 with the CSS code of the Week-03, to made the mobile first design, then, of that design we had to adap for tablet and desktop.
 
-## 🔗 Link Week-04
 If you want to see what I was working on in Week-04, click on the blue link!! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/week-04/index.html)
 
 ## Week 05
 In the fifth week, we have to work with JavaScript. During the week, we develop exercises using this programming language.
 Just to comment, this particular week is just for practicing and getting to know the language.
 
-## 🔗 Link Week-05
-If you want to see what I'm working on this Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-05/index.html)
+If you want to see what I was working on in Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-05/index.html)
 
 ## Week 06
-In this sixth week, we had to use the languages learned in the last weeks, to make the corresponding design for the login and registration page.
+In the sixth week, we had to use the languages learned in the last weeks, to make the corresponding design for the login and registration page.
 The languages we use this week: ECMAScript5, html and css
 
-## 🔗 Link Week-06
-If you want to see what I'm working on this Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-06/views/index.html)
+If you want to see what I was working on in Week-06, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-06/views/index.html)
 
+## Week 07
+In this seventh week, we are going to continue working with week-06. Now, we need to extend the week 06 forms so that when the confirmation buttons are clicked, the data uploaded to them is sent to a web server via an HTTP request from JavaScript.
+
+If you want to see what I'm working on this Week-07, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-07/views/index.html)
 ## Color Reference of the layouts
 
 | Color             | Hex                                                                |

@@ -59,7 +59,7 @@ submitButton.addEventListener("click", function(e) {
       })
       .then(function(data) {
         alert("Login successful.\n" + "Email: " + emailValue + "  Password: " + passValue);
-        alert("Request ok" + JSON.stringify(data));
+        alert("Request successful" + JSON.stringify(data));
       })
       .catch(function(error) {
         alert("An error occurred during the login process.\n" + error.message);

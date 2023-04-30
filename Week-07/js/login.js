@@ -1,7 +1,6 @@
-var emailExpression= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 var emailField = document.querySelector("#email");
 emailField.onblur = function(event) {
-  if (!emailExpression.test(event.target.value)) {
+  if (!emailOk(event.target.value)) {
     emailField.classList.add("invalid");
     emailField.classList.remove("valid");
     emailField.nextElementSibling.innerText = "Your email is wrong"
@@ -21,7 +20,7 @@ emailField.onfocus = function(event) {
 var pass = document.querySelector("#password");
  pass.onblur = function(event) {
   var password = (event.target.value);
-  var isOk = (password.length > 7 && hasNumbersAndChar(password));
+  var isOk = (hasNumbersAndChar(password));
   if (isOk) {
     pass.classList.remove("invalid");
     pass.classList.add("valid")
@@ -79,7 +78,6 @@ function validateAllInformation(email, password){
   return array;
 }
 
-
 function emailOk(emailValue) {
   var emailExpression= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
   if(emailExpression.test(emailValue)) {
@@ -90,7 +88,7 @@ function emailOk(emailValue) {
 }
 
 function passOk(passValue) {
-  if(passValue.length > 7 && hasNumbersAndChar(passValue)) {
+  if(hasNumbersAndChar(passValue)) {
     return true;
   }else {
     return false;

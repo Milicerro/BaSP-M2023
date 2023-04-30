@@ -34,13 +34,16 @@ Just to comment, this particular week is just for practicing and getting to know
 If you want to see what I was working on in Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-05/index.html)
 
 ## Week 06
-In the sixth week, we had to use the languages learned in the last weeks, to make the corresponding design for the login and registration page.
-The languages we use this week: ECMAScript5, html and css
+In the sixth week, we had to use the languages learned in the last weeks, to make the corresponding design for the login and sign-up page. We used HTML for the structure, CSS for the style and Js for the logic.
+
+For these pages we had to validate the fields, make changes to the DOM with ECMAScript 5. For that we use events like blur, focus, among others.
+
+The languages we used this week: ECMAScript5, html and css
 
 If you want to see what I was working on in Week-06, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-06/views/index.html)
 
 ## Week 07
-In this seventh week, we are going to continue working with week-06. Now, we need to extend the week 06 forms so that when the confirmation buttons are clicked, the data uploaded to them is sent to a web server via an HTTP request from JavaScript.
+In this seventh week, we must continue with what was developed in the previous week. Now, we need to extend the week 06 forms so that when the confirmation buttons are clicked, the data loaded into them is sent to a web server via an HTTP request from JavaScript and is also saved to local storage.
 
 If you want to see what I'm working on this Week-07, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-07/views/index.html)
 ## Color Reference of the layouts

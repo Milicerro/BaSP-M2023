@@ -151,10 +151,9 @@ zip.onfocus = function(event) {
   zip.nextElementSibling.innerText = "";
 }
 
-var emailExpression= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 var emailField = document.querySelector("#mail");
 emailField.onblur = function(event) {
-  if (!emailExpression.test(event.target.value)) {
+  if (!emailOk(event.target.value)) {
     emailField.classList.add("invalid");
     emailField.classList.remove("valid");
     emailField.nextElementSibling.innerText = "email invalid"
@@ -172,7 +171,7 @@ emailField.onfocus = function(event) {
 }
 
 var pass = document.querySelector("#pass");
- pass.onblur = function(event) {
+pass.onblur = function(event) {
   var password = (event.target.value);
   var isOk = (password.length > 7 && hasNumbersAndChar(password));
   if (isOk) {
@@ -227,7 +226,7 @@ submitButton.addEventListener("click", function(e) {
 
   var date = document.getElementById("date");
   var dateValue = date.value;
-  dateValue = changeDateFormat(dateValue);
+  var newFormat = changeDateFormat(dateValue);
 
   var phone = document.getElementById("number");
   var phoneValue = phone.value;
@@ -268,7 +267,7 @@ submitButton.addEventListener("click", function(e) {
   localStorage.setItem('pass', passValue);
 
    var url = 'https://api-rest-server.vercel.app/signup?name=' + nameValue + '&lastName=' + lastNameValue + '&dni=' + idValue +
-    '&dob=' + dateValue + '&phone=' + phoneValue + '&address=' + addressValue + '&city=' + localityValue + '&zip=' +
+    '&dob=' + newFormat + '&phone=' + phoneValue + '&address=' + addressValue + '&city=' + localityValue + '&zip=' +
      zipValue +'&email=' + mailValue + '&password=' + passValue + '&password=' + repeatpassValue;
      fetch(url)
      .then(function(response) {
@@ -524,7 +523,7 @@ function dateOk(date) {
   return true;
 }
 
-function changeDateFormat(date){
+function changeDateFormat(date) {
   var dateArray = date.split('-');
 
   year=dateArray[0];

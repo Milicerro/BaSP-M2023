@@ -37,6 +37,14 @@ pass.onfocus = function(event) {
   pass.classList.remove("valid");
   pass.nextElementSibling.innerText = ""
 }
+
+var modal = document.getElementById("containerModal");
+var closeButton = document.getElementsByClassName("close")[0];
+closeButton.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+
 var submitButton = document.querySelector("#form-button");
 submitButton.addEventListener("click", function(e) {
   e.preventDefault();
@@ -44,27 +52,36 @@ submitButton.addEventListener("click", function(e) {
   var emailValue = email.value;
   var pass = document.getElementById("password");
   var passValue = pass.value;
+  var errorMessageElement = document.getElementById("error-message");
+  var successMessageElement = document.getElementById("success-message");
+  var urlDataElement = document.getElementById("url-data");
 
   if (!emailOk(emailValue) || !passOk(passValue)) {
-    alert(validateAllInformation(emailValue, passValue))
-  } else {
+    var errorMessage = validateAllInformation(emailValue, passValue);
+    errorMessageElement.textContent = errorMessage;
+    modal.style.display = "block";
+  }else {
     var url = "https://api-rest-server.vercel.app/login?email=" + emailValue + "&password=" + passValue;
     fetch(url)
-      .then(function(response) {
-        if (!response.ok) {
-          throw new Error();
-        }
-        return response.json();
-      })
-      .then(function(data) {
-        alert("Login successful.\n" + "Email: " + emailValue + "  Password: " + passValue);
-        alert("Request successful" + JSON.stringify(data));
-      })
-      .catch(function(error) {
-        alert("An error occurred during the login process.\n" + error.message);
-      });
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+      if (!response.success) {
+        throw new Error(JSON.stringify(response));
+      }
+      var successMessage = "Login successful.\n" + "Email: " + emailValue + "  Password: " + passValue;
+      successMessageElement.textContent = successMessage;
+      urlDataElement.innerHTML = JSON.stringify(response);
+      modal.style.display = "block";
+      errorMessageElement.textContent = "";
+    })
+    .catch(function(error) {
+      errorMessageElement.textContent = "An error occurred during the login process.\n" + error.message;
+      modal.style.display = "block";
+    });
   }
-});
+})
 
 function validateAllInformation(email, password){
   var array = [];

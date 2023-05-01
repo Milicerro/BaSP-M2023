@@ -212,6 +212,12 @@ rePass.onfocus = function(event) {
   rePass.nextElementSibling.innerText = "";
 }
 
+var modal = document.getElementById("containerModal");
+var closeButton = document.getElementsByClassName("close")[0];
+closeButton.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
 var submitButton = document.querySelector("#form-button");
 submitButton.addEventListener("click", function(e) {
   e.preventDefault();
@@ -249,44 +255,50 @@ submitButton.addEventListener("click", function(e) {
   var rePass = document.getElementById("repeatpass");
   var repeatpassValue = rePass.value;
 
-  if (!nameOk(nameValue) || !lasNameOk(lastNameValue) || !idOk(idValue) || !changeDateFormat(dateValue) ||
-  !phoneOk(phoneValue) || !addressIsOk(addressValue) || !localityOk(localityValue) ||
-  !zipCodeOk(zipValue) || !emailOk(mailValue) || !passOk(passValue) || !rePassOk(repeatpassValue)) {
-   alert(validateAllInformation(nameValue, lastNameValue, idValue, dateValue,
-     phoneValue, addressValue, localityValue, zipValue, mailValue, passValue, repeatpassValue));
-} else {
-  localStorage.setItem('name', nameValue);
-  localStorage.setItem('lastName', lastNameValue);
-  localStorage.setItem('id', idValue);
-  localStorage.setItem('date', dateValue);
-  localStorage.setItem('phone', phoneValue);
-  localStorage.setItem('address', addressValue);
-  localStorage.setItem('locality', localityValue);
-  localStorage.setItem('zip', zipValue);
-  localStorage.setItem('mail', mailValue);
-  localStorage.setItem('pass', passValue);
+  var errorMessageElement = document.getElementById("error-message");
+  var successMessageElement = document.getElementById("success-message");
 
-   var url = 'https://api-rest-server.vercel.app/signup?name=' + nameValue + '&lastName=' + lastNameValue + '&dni=' + idValue +
+  if (!nameOk(nameValue) || !lasNameOk(lastNameValue) || !idOk(idValue) || !changeDateFormat(dateValue) ||
+   !phoneOk(phoneValue) || !addressIsOk(addressValue) || !localityOk(localityValue) ||
+   !zipCodeOk(zipValue) || !emailOk(mailValue) || !passOk(passValue) || !rePassOk(repeatpassValue)) {
+   alert(validateAllInformation(nameValue, lastNameValue, idValue, dateValue,
+    phoneValue, addressValue, localityValue, zipValue, mailValue, passValue, repeatpassValue));
+  }else {
+    localStorage.setItem('name', nameValue);
+    localStorage.setItem('lastName', lastNameValue);
+    localStorage.setItem('id', idValue);
+    localStorage.setItem('date', dateValue);
+    localStorage.setItem('phone', phoneValue);
+    localStorage.setItem('address', addressValue);
+    localStorage.setItem('locality', localityValue);
+    localStorage.setItem('zip', zipValue);
+    localStorage.setItem('mail', mailValue);
+    localStorage.setItem('pass', passValue);
+
+    var url = 'https://api-rest-server.vercel.app/signup?name=' + nameValue + '&lastName=' + lastNameValue + '&dni=' + idValue +
     '&dob=' + newFormat + '&phone=' + phoneValue + '&address=' + addressValue + '&city=' + localityValue + '&zip=' +
-     zipValue +'&email=' + mailValue + '&password=' + passValue + '&password=' + repeatpassValue;
-     fetch(url)
-     .then(function(response) {
-       if (!response.ok) {
-         throw new Error();
-       }
-       return response.json();
-     })
-     .then(function(data) {
-       alert("Register successful.\n" + 'Name: ' + nameValue + 'Last Name: ' +
-       lastNameValue + 'ID: ' + idValue + 'Date: ' + dateValue + 'Phone Number: ' +
-        phoneValue + 'Address: ' + addressValue + 'Locality: ' + localityValue +
-        'Zip Code: ' + zipValue +'Email: ' + mailValue + 'Password: ' + passValue + 'Repet Password: ' + repeatpassValue);
-       alert("Request successful" + JSON.stringify(data));
-     })
-     .catch(function(error) {
-       alert("An error occurred during the sign-up process.\n" + error.message);
-     });
-    }
+      zipValue +'&email=' + mailValue + '&password=' + passValue + '&password=' + repeatpassValue;
+    fetch(url)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+      if (!response.success) {
+        throw new Error(JSON.stringify(response));
+      }
+      var successMessage = "Register successful.\n " + 'Name: ' + nameValue + '  Last Name: ' +
+      lastNameValue + '  ID: ' + idValue + '  Date: ' + dateValue + '  Phone Number: ' +
+      phoneValue + '  Address: ' + addressValue + '  Locality: ' + localityValue +
+      '  Zip Code: ' + zipValue +'  Email: ' + mailValue + '  Password: ' + passValue + '  Repet Password: ' + repeatpassValue;
+      successMessageElement.textContent = successMessage;
+      modal.style.display = "block";
+      errorMessageElement.textContent = "";
+    })
+    .catch(function(error) {
+      errorMessageElement.textContent = "An error occurred during the login process.\n" + error.message;
+      modal.style.display = "block";
+    });
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function() {

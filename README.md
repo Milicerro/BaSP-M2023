@@ -45,7 +45,10 @@ If you want to see what I was working on in Week-06, click the blue link! [Mega 
 ## Week 07
 In this seventh week, we must continue with what was developed in the previous week. Now, we need to extend the week 06 forms so that when the confirmation buttons are clicked, the data loaded into them is sent to a web server via an HTTP request from JavaScript and is also saved to local storage.
 
+The validations must be shown with alerts, although if we got there well over time, we could do them with modals (which is what I did), modifying the HTML, CSS and Js logic.
+
 If you want to see what I'm working on this Week-07, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-07/views/index.html)
+
 ## Color Reference of the layouts
 
 | Color             | Hex                                                                |

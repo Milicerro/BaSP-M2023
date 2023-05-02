@@ -261,8 +261,10 @@ submitButton.addEventListener("click", function(e) {
   if (!nameOk(nameValue) || !lasNameOk(lastNameValue) || !idOk(idValue) || !changeDateFormat(dateValue) ||
    !phoneOk(phoneValue) || !addressIsOk(addressValue) || !localityOk(localityValue) ||
    !zipCodeOk(zipValue) || !emailOk(mailValue) || !passOk(passValue) || !rePassOk(repeatpassValue)) {
-   alert(validateAllInformation(nameValue, lastNameValue, idValue, dateValue,
-    phoneValue, addressValue, localityValue, zipValue, mailValue, passValue, repeatpassValue));
+    var errorMessage = validateAllInformation(nameValue, lastNameValue, idValue, dateValue,
+    phoneValue, addressValue, localityValue, zipValue, mailValue, passValue, repeatpassValue);
+    errorMessageElement.textContent = errorMessage;
+    modal.style.display = "block";
   }else {
     localStorage.setItem('name', nameValue);
     localStorage.setItem('lastName', lastNameValue);
@@ -286,10 +288,10 @@ submitButton.addEventListener("click", function(e) {
       if (!response.success) {
         throw new Error(JSON.stringify(response));
       }
-      var successMessage = "Register successful.\n " + 'Name: ' + nameValue + '  Last Name: ' +
-      lastNameValue + '  ID: ' + idValue + '  Date: ' + dateValue + '  Phone Number: ' +
-      phoneValue + '  Address: ' + addressValue + '  Locality: ' + localityValue +
-      '  Zip Code: ' + zipValue +'  Email: ' + mailValue + '  Password: ' + passValue + '  Repet Password: ' + repeatpassValue;
+      var successMessage = "Register successful.\n" + '\nName: ' + nameValue + ' Last Name: ' +
+      lastNameValue + '\nID: ' + idValue + ' Date: ' + dateValue + ' Phone Number: ' +
+      phoneValue + '\nAddress: ' + addressValue + ' Locality: ' + localityValue +
+      ' Zip Code: ' + zipValue +'\nEmail: ' + mailValue + ' Password: ' + passValue + ' Repet Password: ' + repeatpassValue;
       successMessageElement.textContent = successMessage;
       modal.style.display = "block";
       errorMessageElement.textContent = "";

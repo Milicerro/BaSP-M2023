@@ -77,7 +77,7 @@ submitButton.addEventListener("click", function(e) {
       errorMessageElement.textContent = "";
     })
     .catch(function(error) {
-      errorMessageElement.textContent = "An error occurred during the login process.\n" + error.message;
+      errorMessageElement.textContent = "An error occurred during the login process.\n " + error.message;
       modal.style.display = "block";
     });
   }

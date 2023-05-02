@@ -11,8 +11,8 @@ The screenflow was based on a gym website.
 To achieve this, we worked in subgroups of 2/3 people. Although, always communicating and coordinating with the whole team.
 
 ## Week 02
-In the second week, we have to do the HTML code of the landing page, wich is the main of all.
-To achieve this, we have to only use HTML, this is basic structure and the basic tags.
+In the second week, we had to do the HTML code of the landing page, wich is the main of all.
+To achieve this, we had to only use HTML, this is basic structure and the basic tags.
 
 ## Week 03
 In the third week, we take the html code and add styles with css, always trying to achieve the landing page of the app.
@@ -28,7 +28,7 @@ Also, in that week, we included the mobile and the tablet design. That was for t
 If you want to see what I was working on in Week-04, click on the blue link!! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/week-04/index.html)
 
 ## Week 05
-In the fifth week, we have to work with JavaScript. During the week, we develop exercises using this programming language.
+In the fifth week, we had to work with JavaScript. During the week, we develop exercises using this programming language.
 Just to comment, this particular week is just for practicing and getting to know the language.
 
 If you want to see what I was working on in Week-05, click the blue link! [Mega Rocket](https://milicerro.github.io/BaSP-M2023/Week-05/index.html)
